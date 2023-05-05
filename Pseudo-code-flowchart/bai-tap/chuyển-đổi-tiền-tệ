@@ -1,0 +1,5 @@
+BEGIN
+	Input $
+	VNĐ = 23000 * $
+	Display VNĐ
+END

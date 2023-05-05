@@ -3,15 +3,15 @@ BEGIN
 	a = MAX
 	IF 	a > b
 		IF	a > c
-			DISPLAY “ a = MAX “
+			DISPLAY a
 		ELSE
-			DISPLAY “ c = MAX “
+			DISPLAY c
 		END IF
 	ELSE
 		IF 	b > c
-			DISPLAY “ b = MAX “
+			DISPLAY b
 		ELSE
-			DISPLAY “ c = MAX “
+			DISPLAY c
 		END IF
 	END IF
 END

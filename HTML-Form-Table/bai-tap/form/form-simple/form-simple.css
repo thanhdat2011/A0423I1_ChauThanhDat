@@ -1,0 +1,16 @@
+body{
+    width: 40%;
+    border: aqua solid;
+    border-width: 10px 20px;
+}
+h1{
+    background-color: orange;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+th{
+    column-width: 150px ;
+    color: blueviolet;
+    text-align: right;
+}

@@ -1,0 +1,42 @@
+h1{
+    color: blue;
+    margin-left: 200px;
+}
+
+table{
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+th,td{
+    border: #dddddd solid 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.secondrow{
+    border-left: none;
+}
+sub{
+    color: black;
+}
+.chunhat{
+    background: red;
+    color: #dddddd;
+}
+.weekday{
+    background: orange;
+    color: #dddddd;
+}
+.thubay{
+    background: blueviolet;
+    color: #dddddd;
+}
+.sat{
+    color: blue;
+}
+.sun{
+    color: red;
+}

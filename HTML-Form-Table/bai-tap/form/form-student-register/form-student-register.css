@@ -1,0 +1,16 @@
+body{
+    width: 50%;
+    background-color: blanchedalmond;
+}
+h1{
+    margin: 10px 10px;
+    color: blueviolet ;
+    background-color: #dddddd;
+}
+form{
+    text-align: left;
+    margin-left: 10px;
+}
+th{
+    column-width: 100px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label>Amount </label>
+<input id="amount" type="number" name="amount">
+<br><br>
+<label>From Currency </label>
+<select id="fromCurrency">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<br><br>
+<label>To Currency</label>
+<select id="toCurrency">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<br><br>
+<button onclick="exchange()">Convert</button>
+<p id="ketqua"></p>
+
+
+<script>
+    function exchange() {
+        let a = document.getElementById('amount').value;
+        let b = document.getElementById('fromCurrency').value;
+        let c = document.getElementById('toCurrency').value;
+        if (b == c) {
+            result = a;
+            document.getElementById('ketqua').innerText = "Result : " + result;
+        }   else if (b == 'VND' && c == 'USD') {
+                result = a / 23000;
+                document.getElementById('ketqua').innerText = "Result : " + result;
+        }   else if (b == 'USD' && c == 'VND') {
+                result = a * 23000;
+                document.getElementById('ketqua').innerText = "Result : " + result;
+        }
+}
+
+
+
+</script>
+</body>
+</html>
+

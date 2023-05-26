@@ -9,9 +9,9 @@
 <script>
     // Giải phương trình bậc 2 : ax^2 + bx + c = 0
     alert('Giải phương trình bậc 2 có dạng ax^2 + bx + c = 0');
-    let a = prompt('Nhập hệ số a của phương trình :');
-    let b = prompt('Nhập hệ số b của phương trình :');
-    let c = prompt('Nhập hệ số c của phương trình :');
+    let a = parseFloat(prompt('Nhập hệ số a của phương trình :'));
+    let b = parseFloat(prompt('Nhập hệ số b của phương trình :'));
+    let c = parseFloat(prompt('Nhập hệ số c của phương trình :'));
     if (a==0){
         x = - b/c;
         alert('Phương trình có 1 nghiệm '+ x);

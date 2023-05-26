@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Giải phương trình bậc 2 : ax^2 + bx + c = 0
+    alert('Giải phương trình bậc 2 có dạng ax^2 + bx + c = 0');
+    let a = prompt('Nhập hệ số a của phương trình :');
+    let b = prompt('Nhập hệ số b của phương trình :');
+    let c = prompt('Nhập hệ số c của phương trình :');
+    if (a==0){
+        x = - b/c;
+        alert('Phương trình có 1 nghiệm '+ x);
+    } else {
+        delta = b*b - 4*a*c;
+        if (delta < 0) {
+            alert('Phương trình vô nghiệm');
+        } else if (delta == 0){
+            x = -b/(2*a);
+            alert('Phương trình có nghiệm kép là '+ x);
+        } else if (delta > 0){
+            x1 = (-b + Math.sqrt(delta))/(2*a);
+            x2 = (-b - Math.sqrt(delta))/(2*a);
+            alert('Phương trình có 2 nghiệm');
+            alert('Nghiệm thứ nhất là '+ x1);
+            alert('Nghiệm thứ hai là '+ x2);
+        }
+    }
+</script>
+</body>
+</html>

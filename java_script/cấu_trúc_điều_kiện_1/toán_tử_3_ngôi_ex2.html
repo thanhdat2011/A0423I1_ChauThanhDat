@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Viết chương trình nhập vào giá trị cho chuỗi message.
+    //
+    // Nếu giá trị nhập vào là Employee thì hiển thị chuỗi Hello.
+    //
+    // Còn lại nếu giá trị nhập vào là Director thì hiển thị chuỗi Greetings
+    //
+    // Còn lại nếu giá trị nhập vào chuỗi rỗng thì hiển thị No login
+    //
+    // Còn lại hiển thị chuỗi rỗng
+    //
+    // Sử dụng toán tử ? : để viết chương trình với cấu trúc điều kiện như sau:
+
+    let input = prompt('Lời nhắn là : ');
+    let message = (input == 'Employee') ? 'Hello' :
+        (input == 'Director') ? 'Greeting' :
+            (input == '') ? 'No login' :
+                'Chuối rỗng';
+    alert(message);
+</script>
+</body>
+</html>

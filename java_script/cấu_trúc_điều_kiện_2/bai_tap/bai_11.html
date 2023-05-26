@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Viết chương trình tính thuế thu nhập cá nhân.
+    // Bac 1	TN <= 5tr	        TN x 5%
+    // Bac 2	5tr < TN <= 10tr	TN x 10% - 0.25tr
+    // Bac 3	10tr < TN <= 20tr	TN x 15% - 0.75tr
+    // Bac 4	20tr < TN <= 30tr	TN x 20% - 1.65tr
+    // Bac 5	30tr < TN <= 50tr	TN x 25% - 3.25tr
+    // Bac 6    TN > 50tr           TN x 35% - 9.85tr
+
+    let salary = parseFloat(prompt('Nhap tien luong cua ban :'));
+    if (salary >= 0) {
+        if (salary <= 5000000) {
+            tax1 = salary * 5 / 100;
+            alert('Thue thu nhap cua ban la : '+ tax1);
+        } else if (salary <= 10000000) {
+            tax2 = salary * 10 / 100 - 250000;
+            alert('Thue thu nhap cua ban la : '+ tax2);
+        } else if (salary <= 20000000) {
+            tax3 = salary * 15 / 100 - 750000;
+            alert('Thue thu nhap cua ban la : '+ tax3);
+        } else if (salary <= 30000000) {
+            tax4 = salary * 20 / 100 - 1650000;
+            alert('Thue thu nhap cua ban la : '+ tax4);
+        } else if (salary <= 50000000) {
+            tax5 = salary * 25 / 100 - 3250000;
+            alert('Thue thu nhap cua ban la : '+ tax5);
+        } else {
+            tax6 = salary * 35 / 100 - 9850000;
+            alert('Thue thu nhap cua ban la : '+ tax6);
+        }
+    } else {
+        alert('So ban nhap khong hop le');
+    }
+</script>
+</body>
+</html>

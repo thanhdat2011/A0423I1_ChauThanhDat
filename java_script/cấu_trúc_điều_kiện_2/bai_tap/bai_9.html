@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.
+    // Điều kiện để a,b,c là cạnh của một tam giác là:
+    // a,b,c > 0
+    // a + b > c
+    // b + c > a
+    // a + c > b
+    alert('Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.');
+    let a = parseFloat(prompt('nhập số a : '));
+    let b = parseFloat(prompt('nhập số b : '));
+    let c = parseFloat(prompt('nhập số c : '));
+    if (a>0 && b>0 && c>0){
+        var ab  = (a+b);
+        var bc = (b+c);
+        var ac = (a+c);
+        if (ab>c && bc>a && ac>b){
+            alert('Đây là 3 cạnh của 1 tam giác');
+        } else {
+            alert('Đây không phải là tam giác');
+        }
+    } else {
+        alert('Đây không phải là tam giác');
+    }
+</script>
+</body>
+</html>

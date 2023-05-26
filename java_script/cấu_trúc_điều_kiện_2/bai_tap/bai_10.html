@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Viết chương trình tính giá điện.
+    //              ĐƠN GIÁ (đồng/kWh)	SẢN LƯỢNG (kWh)
+    // Bậc thang 1	1500	             0 - 50
+    // Bậc thang 2	1800	             50 - 100
+    // Bậc thang 3	2000	             100 - 200
+    // Bậc thang 4  2500                 200+
+    let kWh = parseFloat(prompt('Nhập sản lượng điện theo kWh mà gia đình bạn đã sử dụng'));
+    if (kWh >= 0) {
+        if (kWh < 51) {
+            spend1 = kWh * 1500;
+            alert('Tiền điện mà gia đình bạn phải trả là ' + spend1);
+        } else if (kWh < 101){
+            spend2 = 50*1500 + (kWh-50)*1800;
+            alert('Tiền điện mà gia đình bạn phải trả là ' + spend2);
+        } else if (kWh < 201){
+            spend3 = 50*1500 + 50*1800 + (kWh-100)*2000;
+            alert('Tiền điện mà gia đình bạn phải trả là ' + spend3);
+        } else {
+            spend4 = 50*1500 + 50*1800 + 100*2000 + (kWh-200)*2500;
+            alert('Tiền điện mà gia đình bạn phải trả là ' + spend4);
+        }
+    } else {
+        alert('Bạn nhập giá trị không hợp lệ. Vui lòng nhập lại.');
+    }
+
+
+</script>
+</body>
+</html>

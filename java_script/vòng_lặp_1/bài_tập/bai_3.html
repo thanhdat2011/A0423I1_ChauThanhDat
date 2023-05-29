@@ -9,12 +9,15 @@
     // Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.
     // Dãy Fibonacci là dãy vô hạn các số tự nhiên bắt đầu bằng hai phần tử 0 hoặc 1 và 1,
     // các phần tử sau đó được thiết lập theo quy tắc mỗi phần tử luôn bằng tổng hai phần tử trước nó
-    let num1 = document.write('1');
-    let num2 = document.write('1');
-    let total = 2;
-    while (total < 100){
-        document.write(total);
-        total = total + a;
+    let term = parseInt(prompt('hien thi bao nhieu so trong day fibonacci'))
+    let num1 = 1;
+    let num2 = 1;
+    let num3;
+    for (let i=1;i < term;i++){
+        document.write(num1);
+        num3 = num1 + num2;
+        num1 = num2;
+        num2 = num3;
     }
 </script>
 </body>

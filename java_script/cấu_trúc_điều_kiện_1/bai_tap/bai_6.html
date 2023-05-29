@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+    let sell = parseFloat(prompt('Doanh so ban hang thang nay'));
+    if (sell >= 0){
+        if (sell < 10000000){
+            plus = sell*10/100;
+            alert('Hoa hong cua ban la '+ plus);
+        } else if (sell < 20000000){
+            plus = sell*13/100;
+            alert('Hoa hong cua ban la '+ plus);
+        } else if (sell < 30000000){
+            plus = sell*16/100;
+            alert('Hoa hong cua ban la '+ plus);
+        } else {
+            plus = sell*20/100;
+            alert('Hoa hong cua ban la '+ plus);
+        }
+    } else {
+        alert('nhap lai');
+    }
+</script>
+</body>
+</html>

@@ -9,8 +9,21 @@
     // Bài 4: In hình chữ nhật
     let leng = parseInt(prompt('Nhập chiều dài hình chữ nhật'));
     let wid = parseInt(prompt('Nhập chiều rộng hình chữ nhật'));
-    for (i = 1; i < leng; i++){
-        document.write('*');
+    for (i = 1; i <= wid; i++){
+        document.write('<br>');
+        if (i === 1 || i === wid) {
+            for (j = 1; j <= leng; j++) {
+                document.write('*')
+            }
+        } else {
+            for (k = 1; k <= leng; k++){
+                if (k === 1 || k === leng) {
+                    document.write('*');
+                } else {
+                    document.write('&nbsp ');
+                }
+            }
+        }
     }
 </script>
 </body>

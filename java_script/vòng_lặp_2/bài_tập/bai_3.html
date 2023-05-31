@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    // Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau
+
+    // //Phần 1: góc vuông nằm dưới bên trái
+
+    let num1 = parseInt(prompt('NNhập số hàng của tam giác vuông (góc vuông nằm dưới bên trái)'));
+    for (i = 1; i <= num1; i++){
+        for (j=1 ; j <= i; j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+
+    document.write('<br>');
+
+
+    // //Phần 2: góc vuông nằm trên bên trái
+
+    let num2 = parseInt(prompt('Nhập số hàng của tam giác vuông (góc vuông nằm trên bên trái'));
+    for (i = num2; i !== 0; i--){
+        for (j = 1; j <= i; j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+
+    document.write('<br>');
+
+
+    // //Phần 3: góc vuông nằm dưới bên phải
+
+    let num3 = parseInt(prompt('Nhập số hàng của tam giác vuông (góc vuông nằm dưới bên phải'));
+    for (i = 1; i <= num3 ; i++){
+        for (j = i; j < num3; j++){
+            document.write('&nbsp ');
+        }
+        for (k = 1; k <= i ;k++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+
+    document.write('<br>');
+    //
+    // // Phần 4: góc vuông nằm trên bên phải
+    let num4 = parseInt(prompt('Nhập số hàng của tam giác vuông (góc vuông nằm trên bên phải)'));
+    for (i = num4; i !== 0; i--){
+        for (j = 1; j <= num4 - i ; j++){
+            document.write('&nbsp ');
+        }
+        for (k = 1; k <= i ; k++ ){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+    document.write('<br>');
+
+</script>
 </body>
 </html>

@@ -6,5 +6,20 @@
 </head>
 <body>
 
+<script>
+    // Bài 2: Tính giai thừa của một số nguyên dương
+
+    let num = parseInt(prompt('Nhập số nguyên dương bạn muốn tính giai thừa : '));
+    if (num > 0) {
+        let result = 1;
+        for (let i = num; i !== 0 ; i--) {
+            result = result * i;
+            document.writeln(i + '<br>');
+        }
+        document.write('Giai thừa của số ' + num + ' là ' + result);
+    } else {
+        alert('Số bạn nhập không hợp lệ');
+    }
+</script>
 </body>
 </html>

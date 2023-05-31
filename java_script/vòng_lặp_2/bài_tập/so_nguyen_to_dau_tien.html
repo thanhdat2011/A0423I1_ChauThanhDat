@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    // Một ứng dụng cho phép hiển thị 20 số nguyên tố đầu tiên.
+    // 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+
+    let n = parseInt(prompt('Hien thi n so nguyen to : '));
+    let i =0;
+    let count =0;
+    while (count < n){
+        i++;
+        if(isPrime(i)){
+            document.writeln(i);
+            count++;
+        }
+    }
+    function isPrime(val) {
+        for (let i = 2; i < val; i++) {
+            if(val % i === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+</script>
 </body>
 </html>

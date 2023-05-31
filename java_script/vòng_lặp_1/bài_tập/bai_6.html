@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
+    let a = parseInt(prompt('Bao nhieu so dau tien chia het cho 7 ? '));
+    let isDivide7 = 7;
+    let total = 0;
+    for (let i=0; i < a; i++){
+        total += isDivide7;
+        isDivide7 += 7;
+    }
+    document.write(total);
+</script>
+</body>
+</html>

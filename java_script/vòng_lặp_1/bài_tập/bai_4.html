@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
+    let term = parseInt(prompt('hien thi bao nhieu so trong day fibonacci'))
+    let num1 = 1;
+    let num2 = 1;
+    let num3;
+    for (let i=0;i < term;i++){
+        num3 = num1 + num2;
+        num1 = num2;
+        num2 = num3;
+        if (num1 % 5 === 0){
+            document.write('so dau tien trong day chia het cho 5 la : '+ num1);
+            break;
+        }
+    }
+</script>
+</body>
+</html>

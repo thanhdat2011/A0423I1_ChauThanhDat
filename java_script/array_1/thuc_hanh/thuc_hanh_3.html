@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Viết một chương trình JavaScript để tìm một giá tri được nhập vào từ hộp thoại có nằm trong mảng hay không.
+    // Nếu có in ra vị trí của phần tử đó.
+    let checkNum = prompt('Số bạn cần kiểm tra có trong mảng hay không');
+    let array = [-1 , -2, -4, -5, 1, 2, 4, 5, 6, 8, 10, 12, 14];
+    for (let i = 0; i < array.length; i++){
+        if (checkNum == array[i]){
+            alert("Giá trị "+ array[i] +" được tìm thấy tại phần tử thứ "+ i + " của mảng.");
+        }
+    }
+</script>
+</body>
+</html>

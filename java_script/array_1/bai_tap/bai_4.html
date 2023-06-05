@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="input_num" type="text">
+<button id="add" onclick="add_num()">Add</button>
+<button id="display" onclick="display_array()">Display</button>
+<button id="reverse" onclick="reverse_array()">Reverse</button>
+<div id="result"></div>
+<div id="array"></div>
+<div id="reversed_array"></div>
+<script>
+    // Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.
+
+    let array = Array();
+    let index = 0;
+    function add_num() {
+        array[index] = document.getElementById("input_num").value;
+        alert("Element : " + array[index] + " is added at index "+ index);
+        index++;
+        document.getElementById("input_num").value = "";
+    }
+
+    function display_array() {
+        let e = "<hr>";
+        for (let i = 0; i < array.length; i++){
+            e += "Element " + i + " = " + array[i] + "<br>";
+        }
+        document.getElementById("result").innerHTML = e;
+        document.getElementById("array").innerHTML = "Array : " + array;
+    }
+
+    function reverse_array() {
+        document.getElementById("reversed_array").innerHTML = "Reversed Array : " + array.reverse();
+    }
+</script>
+</body>
+</html>

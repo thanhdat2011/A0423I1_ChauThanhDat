@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //  Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+    //  Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+
+    let array = Array(10);
+    for (let i=0; i < array.length; i++){
+        let inputNum = parseInt(prompt('Nhập n số nguyên : '));
+        array[i] = inputNum;
+    }
+    alert('Mảng bạn đã nhập : '+ array);
+
+    mang_giam_dan = array.sort(function (a,b) {
+        return b - a;
+    });
+    alert('Mảng đã sắp xếp lại theo thứ tự giảm dần : '+ mang_giam_dan);
+
+
+
+</script>
+</body>
+</html>

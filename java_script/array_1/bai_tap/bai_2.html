@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+    // Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
+
+    let array = Array(10);
+    let index = 0;
+    let max = 0;
+    for (let i=1; i <= array.length; i++){
+        inputNum = parseInt(prompt('Nhập số nguyên thứ '+ i));
+        array[index] = inputNum;
+        index++;
+    }
+    alert('Mảng bạn nhập : ' + array);
+    for (index = 0; index < array.length; index++){
+        if (array[index] > max) {
+            max = array[index];
+        }
+    }
+    alert(max);
+</script>
+</body>
+</html>

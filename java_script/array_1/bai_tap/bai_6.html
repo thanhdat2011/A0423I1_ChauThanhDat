@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+    // Chương trình tìm xem V có nằm trong mảng số nguyên không?
+    // Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".
+
+    // tạo mảng
+    let array = Array(10);
+    let countV = 0;
+    for (let i=0 ; i < array.length; i++){
+        let inputNum = parseInt(prompt('Nhập n : '));
+        array[i] = inputNum;
+    }
+    alert('Mảng bạn nhập là : ' + array);
+
+    // alert V
+    while (countV <= 10) {
+        let v = parseInt(prompt('Nhập V : '));
+        if (checkV(v)){
+            alert(v + ' is in the array');
+            countV++;
+        } else {
+            alert(v + ' is not in the array');
+        }
+    }
+
+    // hàm check V có trong array hay ko
+    function checkV(value) {
+        for (let i=0; i < array.length; i++){
+            if (value === array[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+</script>
+</body>
+</html>

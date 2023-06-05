@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi
+
+    let array = Array();
+    let index = 0;
+    let so_am = 0;
+    do {
+        inputNum = parseInt(prompt('Nhập số nguyên n : '));
+        if (inputNum === 0){
+            break;
+        }
+        array[index] = inputNum;
+        index++;
+    } while (true);
+    alert('Mảng của bạn đã nhập là : '+ array);
+
+    for (let i=0 ; i < array.length; i++){
+        if (array[i] < 0){
+            so_am++;
+        }
+    }
+    alert('Số nguyên âm trong chuối là : '+ so_am );
+
+</script>
+</body>
+</html>

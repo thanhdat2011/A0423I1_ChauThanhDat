@@ -8,8 +8,18 @@
 
 <script>
     // Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
-    let array = ['Toi ten la Baam. Hoc tai Code Gym'];
-    alert(array.length);
+    let string = prompt('Nhap chuoi : ');
+    array = string.split("")
+    let count = array.length;
+    for (let i=0 ; i <array.length; i++){
+        if (array[i] === " "){
+            count--;
+        }
+    }
+    alert('Count = '+ count);
+
+
+
 </script>
 </body>
 </html>

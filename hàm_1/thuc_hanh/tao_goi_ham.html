@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    // Sử dụng hàm confirm để nhận thông tin đầu vào và đưa ra quyết định dựa trên những thông tin đó.
+
+    function processConfirm(answer) {
+        let result;
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later";
+        }
+        return result;
+    }
+
+    let confirmAnswer = confirm("Do you want to play? Let's play");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
 </body>
 </html>

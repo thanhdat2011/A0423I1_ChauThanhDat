@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    array1 = Array('Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus');
+    array2 = Array('Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo');
+    function find_return() {
+        let star = prompt('Nhập tên ngôi sao : ');
+        for (let i=0; i<array1.length; i++){
+            if (star === array1[i]){
+                return array2[i];
+            }
+        }
+        return 'Không có sao này !!!';
+    }
+    alert(find_return());
+</script>
+</body>
+</html>

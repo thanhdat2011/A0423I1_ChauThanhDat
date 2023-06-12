@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>CHECK PRIME</h1>
+<input id="num" type="text">
+<button id="check" onclick="checkNum()">CHECK</button>
+<div id="result"></div>
+<script>
+    // for (let i=2; i<10000; i++){
+    //     if (isPrime(i)){
+    //         document.writeln(i);
+    //     }
+    // }
+    //
+    //
+    // function isPrime(number) {
+    //     for (let i=2; i < number; i++){
+    //         if (number % i === 0){
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+
+    function checkNum() {
+        let getNum = parseInt(document.getElementById('num').value);
+       if (isPrime(getNum)){
+           document.getElementById('result').innerHTML = '<hr>' + getNum + " là số nguyên tố";
+       } else {
+           document.getElementById('result').innerHTML = '<hr>' + getNum + " không phải là số nguyên tố";
+       }
+    }
+
+    function isPrime(val) {
+        for (let i=2; i < val; i++){
+            if (val % i === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Tạo hàm nhận vào hai tham số.
+    // Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+    // Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+
+    function bai3(a,b) {
+        a = parseFloat(prompt('Nhap a :'));
+        b = parseFloat(prompt('Nhap b :'));
+        if (a>b){
+            return alert('Bạn đã nhập a lớn hơn b');
+        } else {
+            sum = a + b;
+            return alert('Tổng của a và b là : ' + sum );
+        }
+    }
+    bai3();
+</script>
+</body>
+</html>

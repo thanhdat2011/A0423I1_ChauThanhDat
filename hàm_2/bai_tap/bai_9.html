@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+    // kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+    // Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+
+    // prompt('Nhap mang ki tu (nhap 0.0 de dung) ');
+    // prompt('Nhap ki tu can kiem tra : ');
+    let array = Array();
+    let index = 0;
+    do {
+        a = prompt('Nhap mang ki tu (nhap 0.0 de dung) ');
+        if (a === '0.0') {
+            break;
+        }
+        array[index] = a;
+        index++;
+    } while (true);
+
+    alert(array);
+
+    function checkChar() {
+        let char = prompt('Nhap ki tu can kiem tra : ');
+        let count = 0;
+        for (let i=0; i<array.length; i++){
+            if (char === array[i]){
+                count++;
+            }
+        }
+        if (count > 0){
+            // alert(char + ' có trong mảng và số lần xuất hiện là '+ count);
+            return count;
+        } else {
+            // alert(char + ' không có trong mảng');
+            return -1;
+        }
+    }
+    alert(checkChar());
+
+</script>
+</body>
+</html>

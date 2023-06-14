@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+    // Nếu là nguyên dương trả về true, ngược lại trả về false.
+
+    function isNguyenDuong() {
+        a = parseFloat(prompt('Nhap a : '));
+        if (Number.isInteger(a)){
+            return a > 0;
+        } else {
+            return false;
+        }
+    }
+    result = isNguyenDuong();
+    alert(result);
+
+</script>
+</body>
+</html>

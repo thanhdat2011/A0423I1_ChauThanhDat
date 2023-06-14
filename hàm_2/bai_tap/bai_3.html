@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào.
+    // Gọi hàm vừa xây dựng được.
+
+    function calculating_giaithua() {
+        let num = parseInt(prompt('Nhap num : '));
+        let a = 1;
+        for (let i=1; i <= num ; i++){
+            a = a*i;
+        }
+        return a;
+    }
+    result = calculating_giaithua(5);
+    alert(result);
+</script>
+</body>
+</html>

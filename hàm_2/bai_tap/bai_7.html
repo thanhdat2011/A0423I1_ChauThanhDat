@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    a = parseInt(prompt('Nhap a : '));
+    b = parseInt(prompt('Nhap b : '));
+    function swap() {
+        let c = a;
+        a = b;
+        b = c;
+    }
+    swap();
+    alert('a = ' + a);
+    alert('b = ' + b);
+</script>
+</body>
+</html>

@@ -7,11 +7,31 @@
 <body>
 
 <script>
-    let array = ['rEd','bLUe','gReeN','orANge','pURplE','DoG','cAt'];
-    dau_phay1 = array.toString();
-    alert(dau_phay1);
-    dau_gach_chan = array.join("-");
-    alert(dau_gach_chan);
+
+    // Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau.
+    // Ví dụ có mảng chuỗi như sau: myColor = ["Red", "Green", "White", "Black"];
+    // Sau khi thực thi chương trình sẽ trả về dạng như sau :
+    //     "Red,Green,White,Black"
+    let array1  = ['rEd','bLUe','gReeN','orANge','pURplE','DoG','cAt'];
+    dau_phay = array1.toString();
+    alert(dau_phay);
+
+    // Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn.
+    // Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.
+    let array2 = Array();
+    let index = 0;
+    do {
+        let inputNum = parseInt(prompt('Nhap n :'));
+        if (inputNum === 0){
+            break;
+        }
+        array2[index] = inputNum;
+        index++;
+    } while (true);
+
+
+
+
 </script>
 </body>
 </html>

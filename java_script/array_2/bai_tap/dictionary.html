@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input id="text" type="text">
+<button id="translate" onclick="translate_word()">Translate</button>
+<div id="result"></div>
+<script>
+    // Phát triển một ứng dụng từ điển đơn giản.
+    // Ứng dụng cho phép tra cứu các từ tiếng Anh sang tiếng Việt.
+    // Danh sách các từ được lưu trữ trong các mảng.
+
+    let vietnamese_array = ["Chó","Mèo","Vịt","Gà","Hổ"];
+    let english_array = ["Dog","Cat","Duck","Chicken","Tiger"];
+    let index = 0;
+    function translate_word() {
+        textvalue = document.getElementById('text').value;
+        if (isInVietnamese_array(true)) {
+            document.getElementById('result').innerHTML = "<hr>" + english_array[index];
+        } else {
+            document.getElementById('result').innerHTML = "<hr>" + "Không tìm thấy từ";
+        }
+    }
+
+    function isInVietnamese_array() {
+        for (let i = 0; i < vietnamese_array.length; i++) {
+            if (textvalue === vietnamese_array[i]) {
+                index = i;
+                return true;
+            }
+        }
+        return false;
+    }
+
+</script>
 </body>
 </html>

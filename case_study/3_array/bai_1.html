@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let arr1 = Array();
+    let arr2 = Array();
+    let index = 0;
+    let result = 0;
+    do {
+        num1 = parseInt(prompt('Nhap mang 1 : '));
+        if (num1 === 0) break;
+        arr1[index] = num1;
+        index++;
+    } while (true);
+    alert(arr1);
+    for (let i=0; i < arr1.length; i++){
+        temp = arr1[i];
+        result += temp;
+        arr2[i] = result;
+    }
+    alert(arr2);
+</script>
+</body>
+</html>

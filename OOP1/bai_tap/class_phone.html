@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Mobile {
+
+        constructor(id, name) {
+            this.id = id;
+            this.name = name
+            this.battery = 100;
+            this.status = false;
+            this.message = "";
+            this.receivedMess = "";
+            this.sentMess = "";
+        }
+        onOrOff(){
+            if (this.battery > 0){
+                alert('Turned On');
+            } else {
+                alert('Turned Off');
+            }
+        }
+        turnOn(){
+            this.status = true;
+            this.onOrOff();
+        }
+        turnOff(){
+            this.status = false
+            this.onOrOff();
+        }
+        getBatteryInfo() {
+            alert(this.battery);
+        }
+        charge(){
+            return this.battery = 100;
+        }
+        decrease(){
+            this.battery--;
+        }
+        setMess(message){
+            if (this.status) {
+                this.message = message;
+                this.decrease();
+            }
+        }
+        getMess(){
+            if (this.status) {
+                this.decrease();
+                return this.message;
+            }
+        }
+
+        sendMess(message, mobile) {
+            if (this.status) {
+                this.sentMess = message;
+                mobile.receivedMess = message;
+                mobile.setMess(message);
+                this.decrease();
+            }
+        }
+    }
+
+    let nokia = new Mobile(1, 'Iphone');
+    let iPhone = new Mobile(2, 'Nokia');
+    nokia.turnOn();
+    iPhone.turnOn();
+    nokia.sendMess('Nokia is da best', iPhone);
+    alert(iPhone.getMess());
+    nokia.getBatteryInfo();
+    iPhone.getBatteryInfo();
+    // nokia.charge();
+    // nokia.getBatteryInfo();
+    alert(nokia.sentMess);
+    alert(iPhone.receivedMess);
+
+</script>
+</body>
+</html>

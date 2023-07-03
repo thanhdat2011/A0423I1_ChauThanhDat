@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Bài 3: Vẽ tam giác cân rỗng có chiều cao h do người dùng nhập vào. Ví dụ: h = 5
+    //             *
+    //           *   *
+    //         *       *
+    //       *           *
+    //     * * * * * * * * *
+
+    let h = parseFloat(prompt('Nhap h : '));
+
+    for (let i = 1; i <= h; i++) {
+        for (let j = h; j > 0; j--) {
+            if (i===h){
+                document.write(" * ");
+                continue;
+            }
+            if (j !== i) {
+                document.write("&nbsp&nbsp ");
+            } else {
+                document.write(" * ");
+            }
+        }
+        if (i>1) {
+            for (let k = 2; k <= i; k++) {
+                if (i===h) {
+                    document.write(" * ");
+                    continue;
+                }
+                if (k === i) {
+                    document.write(" * ");
+                } else {
+                    document.write("&nbsp&nbsp ");
+                }
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

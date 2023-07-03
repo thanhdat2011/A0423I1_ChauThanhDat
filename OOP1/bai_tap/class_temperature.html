@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<br>
+<script>
+    class Temperature {
+        constructor(celcius) {
+            this.celcius = celcius;
+        }
+        cToF(){
+            return this.celcius * 9 /5 + 32;
+        }
+        cToK(){
+            return this.celcius + 273.15;
+        }
+    }
+
+    let myTemperature = new Temperature(25);
+    document.write('Nhiet do C : ' + myTemperature.celcius);
+    document.write('<br>');
+    document.write('Do F : ' + myTemperature.cToF());
+    document.write('<br>');
+    document.write('Do K : ' + myTemperature.cToK());
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="1000" height="300" style="border:2px solid #ffffff"></canvas>
+
+<script>
+
+    class rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        // getLength() {                                       // GET
+        //     return this.length;
+        // }
+        // getWidth() {
+        //     return this.width;
+        // }
+        //
+        // setLength(length){                                  // SET
+        //     this.length = length;
+        // }
+        // setWidth(width){
+        //     this.width = width;
+        // }
+
+        calculating_area(){                                 // Calculating
+            return this.length*this.width;
+        }
+        calculating_chuvi(){
+            return (this.length+this.width)*2;
+        }
+
+        display(){                                          // Display
+            let c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            // ctx.moveTo(50, 50);
+            // ctx.lineTo(50 + this.length, 50);
+            // ctx.lineTo(50 + this.length, 50 + this.width);
+            // ctx.lineTo(50, 50 + this.width);
+            // ctx.lineTo(50, 50);
+            // ctx.stroke();
+            ctx.beginPath();
+            ctx.rect(50, 50, this.length, this.width);
+            ctx.stroke();
+
+        }
+    }
+
+    let myRectangle = new rectangle(500,200);
+    document.write('<br>');
+    document.write('Chieu dai : ' + myRectangle.length);
+    document.write('<br>');
+    document.write('Chieu rong : ' + myRectangle.width);
+    document.write('<br>');
+    document.write('Dien tich : ' + myRectangle.calculating_area());
+    document.write('<br>');
+    document.write('Chu vi : ' + myRectangle.calculating_chuvi());
+    document.write('<br>');
+    myRectangle.display();
+
+</script>
+</body>
+</html>

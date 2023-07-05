@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="menu">
+    <p>1.Cafe</p>
+    <p>2.Cam vat</p>
+    <p>3.ca rot</p>
+    <p>4.ca chua</p>
+    <p>5.nuoc loc</p>
+    <p>6.nuoc dua</p>
+</div>
+<div>
+    <input id="choose" type="text">
+    <button onclick="submit()">submit</button>
+</div>
+
+<br>
+
+<div>
+    <button onclick="display_order()">Display order</button>
+</div>
+
+<br>
+
+<div id="order_list">
+
+</div>
+
+<br>
+
+<div>
+    <button onclick="payment()">Payment</button>
+</div>
+
+<div id="payment"></div>
+<script>
+    let arrOrder = Array();
+    let arrSpend = Array();
+    let spend = 0;
+    let i =0;
+    let pay = 0;
+
+    function submit() {
+            let choose = parseInt(document.getElementById('choose').value);
+            switch (choose) {
+                case 1 :
+                    name = "coffee";
+                    price = 15000;
+                    alert('Price of '+ name + ' is ' + price);
+                    break;
+                case 2 :
+                    name = "Cam vat";
+                    price = 30000;
+                    alert('Price of '+ name + ' is ' + price);
+                    break;
+                case 3 :
+                    name = "Ca rot";
+                    price = 15000;
+                    alert('Price of '+ name + ' is ' + price);
+                    break;
+                case 4 :
+                    name = "Ca chua";
+                    price = 15000;
+                    alert('Price of '+ name + ' is ' + price);
+                    break;
+                case 5 :
+                    name = "Nuoc loc";
+                    price = 10000;
+                    alert('Price of '+ name + ' is ' + price);
+                    break;
+                case 6 :
+                    name = "Nuoc dua";
+                    price = 25000;
+                    alert('Price of '+ name + ' is ' + price);
+                    break;
+                default :
+                    alert("INVALID OPTION");
+
+            }
+            document.getElementById('choose').value = "";
+            addOrder();
+    }
+
+
+
+    function addOrder(){
+        let amount = parseInt(prompt('Amount : '));
+
+        spend = amount * price;
+        addSpend(spend);
+
+        e = 'Drink : ' + name + ' -----' + ' Amount : ' + amount + ' -----' + 'price : ' + price;
+
+        document.getElementById('order_list').innerHTML = e;
+    }
+
+    function addSpend(a) {
+        arrSpend.push(a);
+    }
+    
+    // function display_order() {
+    //     for (i=0; i<orderArr.length; i++){
+    //         document.getElementById('displayArr').innerHTML = orderArr[i];
+    //     }
+    // }
+
+    function payment() {
+        for (i = 0; i < arrSpend.length; i++) {
+            pay += arrSpend[i];
+        }
+        document.getElementById('payment').innerHTML = "Payment " + pay;
+    }
+</script>
+</body>
+</html>

@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    class Apple {
+        #weight = 10;
+
+        constructor() {
+        }
+
+        decrease(){
+            if (this.#weight > 0){
+                this.#weight--;
+            }
+        }
+        isEmpty(){
+            if (this.#weight === 0){
+                alert('Het tao');
+            }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        say (say){
+            alert(say);
+        }
+        eat (apple){
+            if (apple.#weight > 0){
+                alert(this.name + ' dang an tao');
+                apple.decrease();
+                this.weight++;
+            } else {
+                apple.isEmpty();
+            }
+        }
+        check (apple){
+            return alert(apple.#weight);
+        }
+    }
+
+    let apple = new Apple();
+    let adam = new Human("Adam", "Male", 50);
+    let eva = new Human("Eva", "Female", 40);
+
+    adam.say('Hello Eva');
+    eva.say('Adam di an tao ko');
+    for (let i=1; i <= 10; i++) {
+        adam.eat(apple);
+        adam.check(apple);
+        alert(adam.weight);
+    }
+</script>
 </body>
 </html>

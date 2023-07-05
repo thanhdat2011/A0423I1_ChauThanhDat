@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    class SwitchButton {
+        #status = false;
+        #lamp = null;
+
+        constructor() {
+        }
+
+        connectToLamp(lamp){
+            this.#lamp = lamp;
+        }
+        switchOff(){
+            this.#status = false;
+            this.#lamp.turnOff();
+        }
+        switchOn(){
+            this.#status = true;
+            this.#lamp.turnOn();
+        }
+    }
+
+    class ElectricLamp {
+        #status = false;
+        constructor() {
+        }
+        turnOff(){
+            this.#status =  false;
+            alert("Lamp is turned off");
+        }
+        turnOn(){
+            this.#status = true;
+            alert("Lamp is turned on");
+        }
+    }
+
+    button = new SwitchButton();
+    lamp = new ElectricLamp();
+    button.connectToLamp(lamp);
+    for (let i = 0; i < 10; i++) {
+        button.switchOn();
+        button.switchOff();
+    }
+</script>
 </body>
 </html>

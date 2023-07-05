@@ -2,9 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Ứng dụng quản lý sản phẩm sử dụng hàm</title>
 </head>
 <body>
-$END$
+<h2>Ứng dụng quản lý sản phẩm</h2>
+Add product: <input type="text"  id="product"/>
+<input type="submit" value="Add" onclick="addProduct()" /><br>
+<table id="output" border = '1px solid black' style="font-size:20px"</table><br>
+<input type="submit" value="Show Table" onclick="showTable()" /><br><br>
+
+
+<script>
+
+    let arrayProduct = [];
+
+    function addProduct() {
+        let input = document.getElementById('product').value;
+        if(input != ""){
+            arrayProduct.push(input);
+            alert(input + ' was added');
+        }
+        document.getElementById('product').value = "";
+        showTable();
+    }
+
+    function showTable() {
+        dataHTML = "";
+        dataHTML += '<tr>';
+        dataHTML += '<th>Products</th>';
+        dataHTML += '<th colspan="2">'+arrayProduct.length+' products</th>';
+        dataHTML += '</tr>';
+        dataHTML += '<tr>';
+        dataHTML += '<th>STT</th>';
+        dataHTML += '<th>Product</th>';
+        dataHTML += '<th>Edit</th>';
+        dataHTML += '</tr>';
+        for (let index in arrayProduct){
+            dataHTML += '<tr>';
+            dataHTML += '<td>'+(parseInt(index) + 1)+'</td>';
+            dataHTML += '<td>'+arrayProduct[index]+'</td>';
+            dataHTML += "<td>" +
+                "<input type='submit' value='changeName' onclick='deleteProduct("+index+")' />" +
+                "<input type='submit' value='delete' onclick='editProduct("+index+")' />" +
+                "</td>";
+            dataHTML += '</tr>';
+        }
+        document.getElementById('output').innerHTML = dataHTML;
+    }
+
+    function deleteProduct(index) {
+        let answer = confirm('delete it ?');
+        if (answer) {
+            arrayProduct.splice(index, 1);
+            showTable();
+        }
+    }
+    function editProduct(index){
+        newProduct = prompt('Change name of product');
+        //alert()
+        arrayProduct[index] = newProduct;
+        showTable();
+    }
+
+
+</script>
 </body>
 </html>

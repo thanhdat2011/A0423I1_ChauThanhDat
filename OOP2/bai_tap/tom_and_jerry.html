@@ -2,9 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    class Rat {
+
+        constructor(name, weight, speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+            this.status = true;
+            this.isCatch = false;
+        }
+
+        isAlive() {
+            if (this.status) {
+                alert('Alive');
+            } else {
+                alert('Died');
+            }
+        }
+        makesound() {
+            alert('Chit chit');
+        }
+    }
+
+    class Cat {
+
+        constructor(name, weight, speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+        }
+        makeSound() {
+            alert('Meow Meow');
+        }
+        catchRat(rat){
+            if (this.speed > rat.speed){
+                rat.isCatch = true;
+                alert('Caught Rat');
+            } else  alert('Can not catch');
+        }
+        eatRat(rat){
+            if (rat.isCatch){
+                if (rat.status){
+                    this.weight += rat.weight;
+                    alert('Ate rat');
+                    rat.status = false;
+                }
+            }
+        }
+    }
+
+    const rat1 = new Rat('Jerry', 2, 10);
+    const rat2 = new Rat('Jerry Cha', 5, 20);
+    const cat = new Cat('Tom', 10, 15);
+    rat1.isAlive();
+    rat1.makesound();
+    cat.catchRat(rat1);
+    cat.eatRat(rat1);
+    alert(cat.weight);
+    rat1.isAlive();
+
+    alert('Jerry Cha appear');
+    cat.catchRat(rat2);
+</script>
 </body>
 </html>

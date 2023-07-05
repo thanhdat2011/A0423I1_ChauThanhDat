@@ -2,9 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+
+    class Remote {
+        #id;
+        #tv = null;
+        constructor(id) {
+            this.#id = id;
+        }
+        // changeChannel(){
+        //     if (this.#tv.status){
+        //
+        //     }
+        // }
+        increaseVol(){
+            if (this.#tv.status){
+                this.#tv.increaseVol();
+            }
+        }
+        decreaseVol(){
+            if (this.#tv.status){
+                this.#tv.decreaseVol();
+            }
+        }
+        connectToTV(TiVi){
+            this.#tv =  TiVi;
+        }
+        switchOn(){
+            this.#tv.turnOn();
+        }
+        switchOff(){
+            this.#tv.turnOn();
+        }
+
+    }
+
+    class TiVi {
+
+        constructor() {
+            this.volume = 60;
+            this.status = false;
+            this.channel = 1;
+        }
+        changeChannel(channel){
+            return this.channel = channel;
+        }
+        checkVol(){
+            if (this.status) {
+                return this.volume;
+            }
+        }
+        isOn(){
+            if (this.status){
+                alert('TV Turned On');
+            } else alert('TV Turned Off')
+        }
+        turnOn(){
+            this.status = true;
+            this.isOn();
+        }
+        turnOf(){
+            this.status = false;
+            this.isOn();
+        }
+        increaseVol(){
+            if (this.status) {
+                this.volume++;
+            }
+        }
+        decreaseVol() {
+            if (this.status) {
+                this.volume--;
+            }
+        }
+    }
+
+    const tivi = new TiVi();
+    const remote = new Remote(1);
+
+    remote.connectToTV(tivi);
+    remote.switchOn();
+
+    alert(tivi.checkVol());
+
+    remote.increaseVol();
+    remote.increaseVol();
+    alert(tivi.volume);
+
+    tivi.changeChannel(2);
+    alert(tivi.channel);
+</script>
 </body>
 </html>

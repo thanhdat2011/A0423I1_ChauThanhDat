@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        th, td {
+            border: black solid 1px ;
+            border-collapse: collapse;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">Quan li cong nhan</h1>
+
+<table style="border: black solid 1px" width="100%">
+    <thead>
+        <th>STT</th>
+        <th>Họ và tên</th>
+        <th>Ngày sinh</th>
+        <th>Đia chỉ</th>
+        <th>Lương</th>
+        <th>Chức vụ</th>
+    </thead>
+        <tbody>
+        </tbody>
+</table>
+
+    <div>
+        <table>
+            <div>
+                <tr>
+                    <td><label>STT: </label></td>
+                    <td><input id="stt"></td></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label>Name: </label></td>
+                    <td><input id="name"></td></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label>Date Of Birth: </label></td>
+                    <td><input id="date"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label>Address: </label></td>
+                    <td><input id="address"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label>Salary: </label></td>
+                    <td><input id="salary"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label>Position: </label></td>
+                    <td><input id="position"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><button onclick="save()">Save</button></td>
+                </tr>
+            </div>
+        </table>
+    </div>
+
+    <input type="button" value="showList" onclick="showList()">
+<script>
+    let employeeList = [];
+
+    class Employee {
+        constructor(stt, name, date, address, salary, position) {
+            this.stt = stt;
+            this.name = name;
+            this.date = date;
+            this.address = address;
+            this.salary = salary;
+            this.position = position;
+        }
+    }
+
+    class Manage {
+        add(employee) {
+            employeeList.push(employee);
+        }
+    }
+
+    let manage = new Manage();
+
+    function showTable() {
+        let res = '';
+        for (let i = 0; i < employeeList.length; i++) {
+            res += `
+                <tr>
+                    <td>${employeeList[i].stt}</td>
+                    <td>${employeeList[i].name}</td>
+                    <td>${employeeList[i].date}</td>
+                    <td>${employeeList[i].address}</td>
+                    <td>${employeeList[i].salary}</td>
+                    <td>${employeeList[i].position}</td>
+                </tr>
+            `
+        }
+        document.querySelector('tbody').innerHTML = res;
+    }
+
+    function save() {
+        const employeeName = document.getElementById('name').value;
+        p = new Employee(stt.value, employeeName, date.value, address.value, salary.value, position.value);
+        manage.add(p);
+    }
+
+    function showList() {
+        showTable();
+    }
+</script>
+</body>
+</html>

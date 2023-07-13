@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        table {
+            table-layout: fixed;
+            border: 1px solid;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 1px solid;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="title">
+        <h1>Product Management</h1>
+    </div>
+    <div class="addNew">
+        <button onclick="showProduct(0,'','','')">Add New</button>
+    </div>
+</header>
+
+<table>
+    <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Color</th>
+    <th>Price</th>
+    <th>Action</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<div>
+        <div>
+            <input type="hidden" id="idProduct">
+            <label>Name: </label>
+            <input id="nameProduct">
+        </div>
+        <div>
+            <label>Color: </label>
+            <input id="colorProduct">
+        </div>
+        <div>
+            <label>Price: </label>
+            <input id="priceProduct">
+        </div>
+        <div>
+            <button onclick="saveProduct()">
+                Save
+            </button>
+        </div>
+</div>
+
+<script>
+    class Product {
+        constructor(id, name, color, price) {
+            this.id = id;
+            this.name = name;
+            this.color = color;
+            this.price = price;
+        }
+    }
+
+    class ProductService {
+        products = [
+            {
+                id: 1,
+                name: 'Nokia',
+                color: 'red',
+                price: 1000
+            },
+            {
+                id: 2,
+                name: 'Apple',
+                color: 'gold',
+                price: 1200
+            }
+        ];
+
+        findAll() {
+            return this.products;
+        }
+
+        save(p) {
+            // if(p.id > 0){
+            //     const  index = this.products.findIndex(e => e.id === p.id);
+            //     this.products[index] = p;
+            // }
+            // else {
+            //     p.id = this.products.at(-1).id +1;
+            //     this.products.push(p);
+            // }
+            const productName = document.getElementById('name').value;
+            p = new Product(id.id, productName, seri.value, quantity.value, price.value);
+            console.log(isEdit);
+            console.log(p);
+            if (isEdit) {
+                productService.edit(p);
+            } else {
+                productService.add(p);
+            }
+            showProducts();
+        }
+
+        deleteById(id){
+            const  index = this.products.findIndex(e => e.id === id);
+
+            if(index > -1){
+                this.products.splice(index, 1);
+            }
+        }
+    }
+
+    let ps = new ProductService();
+
+    function displayAll() {
+        let res = '';
+        const products = ps.findAll();
+        for (let i = 0; i < products.length; i++) {
+            res += `
+                <tr>
+                    <td>${products[i].id}</td>
+                    <td>${products[i].name}</td>
+                    <td>${products[i].color}</td>
+                    <td>${products[i].price}</td>
+                    <td>
+                        <div>
+                            <button onclick="showProduct(${products[i].id}, '${products[i].name}', '${products[i].color}', '${products[i].price}')">Edit</button>
+                            <button onclick='deleteProduct(${products[i].id})'>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            `;
+        }
+
+        document.querySelector("tbody").innerHTML = res;
+    }
+
+    function deleteProduct(id){
+        const c = confirm("Are you sure to delete this product");
+        if(c){
+            ps.deleteById(id);
+            displayAll();
+        }
+    }
+
+    function showProduct(id, name, color, price){
+        idProduct.value = id;
+        nameProduct.value = name;
+        colorProduct.value = color;
+        priceProduct.value= price;
+        myPopup.classList.add("show");
+    }
+
+    function saveProduct(){
+        const  p = new Product(idProduct.value, nameProduct.value, colorProduct.value, priceProduct.value);
+        ps.save(p);
+        displayAll();
+        myPopup.classList.remove("show");
+    }
+
+    displayAll();
+
+    closePopup.addEventListener("click", function () {
+        myPopup.classList.remove("show");
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target == myPopup) {
+            myPopup.classList.remove("show");
+        }
+    });
+</script>
+</body>
+</html>

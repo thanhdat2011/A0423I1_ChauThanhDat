@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let num = parseInt(prompt('Input interger. Is it SO HOAN HAO ?'));
+    let sum = 0;
+
+    function sumUoc() {
+        for (let i=1; i < num; i++){
+            if (num % i === 0) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+    sumUoc();
+
+    function isSoHoanHao() {
+        return num === sum;
+    }
+
+    alert(isSoHoanHao());
+
+
+</script>
+</body>
+</html>

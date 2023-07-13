@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<p id="doimau" onmouseout="mouseout()" onmouseover="mouseover()">đây là trang chủ của codegym</p>
+<form>
+    <label>Họ Và Tên</label>
+    <input id="fullname" type="text">
+    <br><br>
+    <button type="submit" onclick="shownotice()">CLICK TO SUBMIT</button>
+</form>
+
+
+
+
+
+
+<script>
+    function shownotice() {
+        alert('already submit');
+        let text = document.getElementById('fullname').value;
+        document.write(text);
+        alert(text);
+    }
+
+    function mouseover() {
+        document.getElementById('doimau').style.color="red";
+    }
+    function mouseout() {
+        document.getElementById('doimau').style.color="black";
+    }
+
+    document.getElementById('doimau').innerText = "Day ko phai la trang cua codegym"
+</script>
 </body>
 </html>

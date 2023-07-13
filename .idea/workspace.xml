@@ -20,20 +20,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89f89dec-241f-4959-b011-d43fdd5fe3ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/module1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo-code-flowchart/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/1_Final_exam/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1_Final_exam/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1_Final_exam/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML-Form-Table/bai-hoc/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP2/bai_tap/manage_product_oop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/5_array/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/5_array/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/5_array/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/6_OOP/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/6_OOP/manage_P_OOP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Git-HTML/bài-tập/tạo-CV.html" beforeDir="false" afterPath="$PROJECT_DIR$/Git-HTML/bài-tập/tạo-CV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Git-HTML/bài-tập/tạo-danh-sách.html" beforeDir="false" afterPath="$PROJECT_DIR$/Git-HTML/bài-tập/tạo-danh-sách.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/basic-table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/google-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/quiz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/survey-client-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/table-advance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/table-advance/table-advance.css" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/table-advance/table-advance.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/ád.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/class_phone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/class_temperature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP1/thuc_hanh/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/demo1.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP1/thuc_hanh/demo1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/lop_DATE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/lop_Hinh_Tron.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/lop_rectangle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP2/thuc_hanh/den_pin.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP2/thuc_hanh/den_pin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_4_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_4_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/4_string/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/4_string/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/4_string/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/4_string/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/4_string/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/4_string/bai_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hàm_2/bai_tap/isPalindrome.html" beforeDir="false" afterPath="$PROJECT_DIR$/hàm_2/bai_tap/isPalindrome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hàm_2/bai_tap/manage_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/hàm_2/bai_tap/manage_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/Tổng_quan/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/Tổng_quan/alert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/array_1/bai_tap/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/array_1/bai_tap/bai_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/array_1/bai_tap/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/array_1/bai_tap/bai_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/array_1/thuc_hanh_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/array_1/thuc_hanh_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/array_1/thuc_hanh_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/array_1/thuc_hanh_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/array_2/bai_tap/ham_co_san_cua_mang.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/array_2/bai_tap/ham_co_san_cua_mang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/admin_password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/if_else.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/năm_nhuận.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/switch_case_ex1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/switch_case_ex2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/switch_case_ex3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/toán_tử_3_ngôi_ex1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/toán_tử_3_ngôi_ex2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_2/keyboard_press_event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_2/mouse_event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/do_while_ex1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/for_ex1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/for_ex2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/loop_lồng_nhau_(check).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/while_ex1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/while_ex2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp_1/bài_tập/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/vòng_lặp_1/bài_tập/bai_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp_1/bài_tập/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/vòng_lặp_1/bài_tập/bai_8.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Pseudo-code-flowchart" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2Oy3Rturkou48wD5PzlMuQ70JnP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -44,16 +114,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e9ddc2fd-f823-449b-978f-128a609bce73" name="Default Changelist" comment="" />
+      <changelist id="89f89dec-241f-4959-b011-d43fdd5fe3ed" name="Default Changelist" comment="" />
       <created>1682518990042</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -62,6 +136,77 @@
       <workItem from="1682519141880" duration="55000" />
       <workItem from="1682519222251" duration="34000" />
       <workItem from="1683102962976" duration="29000" />
+      <workItem from="1683476835414" duration="4166000" />
+      <workItem from="1683550139957" duration="5020000" />
+      <workItem from="1683604967294" duration="1557000" />
+      <workItem from="1683724156536" duration="4693000" />
+      <workItem from="1683802089553" duration="726000" />
+      <workItem from="1683803349548" duration="1808000" />
+      <workItem from="1683818241283" duration="2145000" />
+      <workItem from="1683820411416" duration="1950000" />
+      <workItem from="1683864140299" duration="6313000" />
+      <workItem from="1683882148172" duration="4635000" />
+      <workItem from="1683888336304" duration="13325000" />
+      <workItem from="1683965031910" duration="1282000" />
+      <workItem from="1683968674831" duration="1143000" />
+      <workItem from="1683975808635" duration="4772000" />
+      <workItem from="1683981608926" duration="2000" />
+      <workItem from="1683983284698" duration="533000" />
+      <workItem from="1684057654426" duration="1563000" />
+      <workItem from="1684154491198" duration="5202000" />
+      <workItem from="1684210886403" duration="1231000" />
+      <workItem from="1684233466087" duration="604000" />
+      <workItem from="1684244554617" duration="2884000" />
+      <workItem from="1684294743180" duration="2046000" />
+      <workItem from="1684311377129" duration="1642000" />
+      <workItem from="1684328981549" duration="4788000" />
+      <workItem from="1684569188700" duration="663000" />
+      <workItem from="1684584552807" duration="422000" />
+      <workItem from="1684594599818" duration="52000" />
+      <workItem from="1684666035055" duration="1519000" />
+      <workItem from="1684761282866" duration="5027000" />
+      <workItem from="1684816488783" duration="3804000" />
+      <workItem from="1684925640313" duration="12876000" />
+      <workItem from="1685019745965" duration="9361000" />
+      <workItem from="1685078989316" duration="3770000" />
+      <workItem from="1685094579489" duration="600000" />
+      <workItem from="1685104947016" duration="6438000" />
+      <workItem from="1685172535635" duration="188000" />
+      <workItem from="1685272008359" duration="2413000" />
+      <workItem from="1685352277289" duration="3985000" />
+      <workItem from="1685357940280" duration="11527000" />
+      <workItem from="1685420130434" duration="3192000" />
+      <workItem from="1685530331351" duration="13020000" />
+      <workItem from="1685711054868" duration="5451000" />
+      <workItem from="1685956376033" duration="2444000" />
+      <workItem from="1685961588997" duration="13711000" />
+      <workItem from="1686134994218" duration="13107000" />
+      <workItem from="1686314798633" duration="6536000" />
+      <workItem from="1686560815013" duration="3334000" />
+      <workItem from="1686566117387" duration="13816000" />
+      <workItem from="1686706408487" duration="1301000" />
+      <workItem from="1686739958379" duration="12705000" />
+      <workItem from="1686914519296" duration="3825000" />
+      <workItem from="1687178605004" duration="3149000" />
+      <workItem from="1687181773217" duration="3242000" />
+      <workItem from="1687345558178" duration="11709000" />
+      <workItem from="1687368742102" duration="1777000" />
+      <workItem from="1687523570719" duration="3190000" />
+      <workItem from="1687585325445" duration="7501000" />
+      <workItem from="1687760258297" duration="616000" />
+      <workItem from="1687776218314" duration="13644000" />
+      <workItem from="1688121875448" duration="13460000" />
+      <workItem from="1688371790527" duration="7063000" />
+      <workItem from="1688380964476" duration="7102000" />
+      <workItem from="1688543365268" duration="7423000" />
+      <workItem from="1688551408416" duration="25000" />
+      <workItem from="1688553675404" duration="356000" />
+      <workItem from="1688554175972" duration="97000" />
+      <workItem from="1688554558431" duration="338000" />
+      <workItem from="1688557888477" duration="8439000" />
+      <workItem from="1688566638126" duration="70000" />
+      <workItem from="1688721027543" duration="2960000" />
+      <workItem from="1688725506081" duration="68000" />
     </task>
     <servers />
   </component>
@@ -78,11 +223,69 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="539" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1683296228641">
+    <state x="539" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1687781553046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="539" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1683296228641" />
+    <state x="539" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1687781553046" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1687784345095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1687784345095" />
+    <state x="435" y="59" key="SettingsEditor" timestamp="1683807095112">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="435" y="59" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1683807095112" />
+    <state x="613" y="110" key="VCS.ChangeListViewerDialog" timestamp="1687182680603">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="613" y="110" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1687182680603" />
+    <state x="376" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1684932894988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="376" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1684932894988" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1688127033182">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1688127033182" />
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1" timestamp="1684332091888">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1684332091888" />
+    <state x="93" y="93" width="1350" height="638" key="dock-window-2" timestamp="1684332091888">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1684332091888" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1688546304874">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1688546304874" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1686748156514">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1686748156514" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_2/bai_tap/switch_case.html</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/java_script/vòng_lặp_2/bài_tập/bai_2.html</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/hàm_2/bai_tap/isPalindrome.html</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+
+    let str = prompt('Enter string');
+    let count = 0;
+    str = str.split("");
+    console.log(str);
+    for (let i=0 ; i < str.length; i++){
+        count++;
+        for (let j=(i+1); j<= str.length;){
+            if (str[i] === str[j]) {
+                str.splice(j,1);
+                continue;
+            }
+            j++;
+        }
+    }
+    console.log(str);
+    console.log(count);
+
+</script>
 </body>
 </html>

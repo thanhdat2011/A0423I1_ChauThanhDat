@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    let input = prompt('Enter sentence : ');
+    input = input.trim().split("");
+
+    console.log(input.join(''));
+
+    for (let i = 0; i < input.length;) {
+        if (input[i-1] === " " || i === 0) {
+            input[i] = input[i].toUpperCase();
+        }
+        if (input[i] === " " && input[i+1] === " ") {
+            input.splice(i,1);
+            continue;
+        }
+        i++;
+    }
+
+    console.log(input.join(''));
+</script>
 </body>
 </html>

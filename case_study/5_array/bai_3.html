@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    function findMinMaxInMatrix(m,n){
+        let min = Number.MAX_VALUE;
+        let max = Number.MIN_VALUE;
+
+        for (let i = 0; i < m; i++) {
+            a[i] = [];
+            for (let j = 0; j < n; j++) {
+                a[i][j] = Math.round(Math.random()*100);
+
+                if(a[i][j] > max){
+                    max = a[i][j];
+                }
+
+                if(a[i][j] < min){
+                    min = a[i][j];
+                }
+            }
+        }
+
+        return {
+            min: `${min}`,
+            max: `${max}`
+        };
+    }
+
+    const m = +prompt("enter m");
+    const n = +prompt("enter n");
+
+    console.log(a);
+    console.log(findMinMaxInMatrix(m,n));
+</script>
+</body>
+</html>

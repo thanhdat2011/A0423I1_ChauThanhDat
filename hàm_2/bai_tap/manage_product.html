@@ -10,19 +10,28 @@
     <button id="add" onclick="add_Product()">Add</button>
 
     <h2>Display All Product</h2>
-    <button onclick="display_list()">Display list</button>
-    <div id="result"></div>
 
+<!--    <button onclick="display_list()">Display list</button>-->
+    <div id="result"></div>
 
 
 
 
 <script>
 
-    let arrayProduct = Array();
-    let arrayFunction = Array('<button>Edit</button>', '<button>Delete</button>');
+    let arrayProduct = Array("cafe sua","cafe den","bac xiu");
+    // let arrayFunction = Array('<button onclick="rename_Product()">Edit</button>', '<button>Delete</button>');
 
-    function display_table() {
+    //function thêm sản phẩm
+    function add_Product() {
+        let newProduct = document.getElementById('inputProduct').value;
+        alert('Bạn đã thêm ' + newProduct + ' vào danh sách');
+        arrayProduct.push(newProduct);
+        document.getElementById('inputProduct').value= "";
+        display_list();
+    }
+
+    function display_list() {
         let sout;
         sout = "<table border='1' width='500' cellspacing='0'>"
         for (let i = 0; i < arrayProduct.length; i++) {
@@ -32,29 +41,36 @@
                     sout = sout + "<td>" + (i + 1) + "</td>";
                 } else if (j === 1) {
                     sout = sout + "<td>" + arrayProduct[i] + "</td>";
+                } else if (j === 2) {
+                    sout = sout + "<td>" + "<button onclick='rename_Product()'>Edit</button>" + "</td>";
                 } else {
-                    sout = sout + "<td>" + arrayFunction[j - 2] + "</td>";
+                    sout = sout + "<td>" + "<button onclick='delete_Product()'>Delete</button>" + "</td>";
                 }
             }
             sout = sout + "</tr>";
         }
-        document.getElementById(result).;
+        document.getElementById('result').innerHTML = sout;
     }
 
-    function add_Product() {
-        let newProduct = document.getElementById('inputProduct').value;
-        alert('Bạn đã thêm ' + newProduct + ' vào danh sách');
-        arrayProduct.push(newProduct);
-        document.getElementById('inputProduct').value= "";
-    }
-    
-    function display_list() {
-        display_table();
+    //function sửa tên sản phẩm
+    function rename_Product() {
+
     }
 
+    //function xoa san pham
+    function delete_Product() {
+        confirm('delete it ?');
+        for (let i=0; i<arrayProduct.length;i++){
+            for (let j=0; j<4;j++){
+                arrayProduct.splice(j,4);
+            }
 
+        }
+    }
 
+    display_list();
 
 </script>
 </body>
 </html>
+

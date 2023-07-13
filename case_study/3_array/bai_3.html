@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    let tu = [5, 2, 5];
+    let mau = [6, 3, 4];
+    let chiso = 0;
+    let tuMax = tu[0];
+    let mauMax = mau[0];
+
+    let max = tu[0]/mau[0];
+    for (let i =0; i<tu.length;i++) {
+        result = tu[i] / mau[i];
+        if (result > max) {
+            max = result;
+            tuMax = tu[i];
+            mauMax = mau[i];
+            chiso = i;
+        }
+    }
+
+    alert('Phan so lon nhat la : ' + tuMax+'/'+mauMax);
+    alert('Chi so la : '+ chiso);
+
+</script>
 </body>
 </html>

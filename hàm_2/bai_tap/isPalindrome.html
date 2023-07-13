@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    // Xây dựng chương trình sử dụng đệ quy để kiểm tra một từ có phải là từ đối xứng không
+    // Một chuỗi palindrome là một từ được đọc theo thứ tự xuôi, ngược đều giống nhau.
+    // Ví dụ, rotor và redder là các chuỗi palindrome, nhưng motor thì không phải.
+    //
+    // Kiểm tra một chuỗi là một palindrome được chia thành hai bài toán con
+    //
+    // (1) Kiểm tra xem ký tự đầu tiên và ký tự cuối cùng của chuỗi có bằng nhau.
+    //
+    // (2) Bỏ qua hai ký tự đầu và cuối, kiểm tra xem phần còn lại của chuỗi con là một palindrome.
+    //
+    //     Bài toán con thứ hai (2) giống như vấn đề ban đầu nhưng nhỏ hơn về kích thước.
+
+
+    function isPalindrome() {
+        let first = 0;
+        let last = split_word.length - 1;
+        while (first < last) {
+            if (split_word[first] !== split_word[last]){
+                return false;
+            } else {
+                first++;
+                last--;
+            }
+        }
+        return true;
+    }
+
+    let word = prompt('Input word : ');
+    split_word = word.split("");
+    if (isPalindrome()){
+        alert('Đây là chuỗi Palindrome');
+    } else {
+        alert('Đây không phải là chuỗi Palidrome ');
+    }
+</script>
 </body>
 </html>

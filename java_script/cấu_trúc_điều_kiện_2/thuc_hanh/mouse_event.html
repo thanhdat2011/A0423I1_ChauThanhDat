@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="ball" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Gplwax23a-CnXnFGPvgLtm4SDZLbQQ0gyw&usqp=CAU"><br>
+<label>CLick the button below to move image</label><br>
+<button onclick="moveLeft()">Move Left</button>
+<button onclick="moveRight()">Move Right</button>
+
+
+<script>
+    // Làm sử dụng sự kiện click chuột để di chuyển hình ảnh một quả bóng.
+    // Mỗi lần click quả bóng sẽ được di chuyển sang trái/phải một khoảng cách.
+
+    let imgMove = null;
+    imgMove = document.getElementById('ball');
+    function init() {
+        imgMove = document.getElementById('ball');
+        imgMove.style.position = 'relative';
+        imgMove.style.left = '0px';
+    }
+    function moveRight() {
+        imgMove.style.left = parseInt(imgMove.style.left) + 10 + 'px';
+    }
+    function moveLeft(){
+        imgMove.style.left = parseInt(imgMove.style.left) - 10 + 'px';
+    }
+    window.onload = init();
+</script>
+</body>
+</html>

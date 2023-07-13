@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let myDate = function (day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        // phương thức getDay()
+        this.getDay = function () {
+            return this.day;
+        }
+        this.getMonth = function () {
+            return this.month;
+        }
+        this.getYear = function () {
+            return this.year;
+        }
+
+        // phương thức setDay()
+        this.setDay = function (day) {
+            this.day = day;
+        }
+        this.setMonth = function (month) {
+            this.month = month;
+        }
+        this.setYear = function (year) {
+            this.year = year;
+        }
+
+        // thêm phương thức setDate()
+        this.setDate = function (day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        // thêm phương thức toString() để trả về chuỗi ngày tháng năm theo định dạng dd/mm/yyyy.
+        this.toString = function () {
+
+        }
+    };
+
+    // tạo đối tượng date
+    let date = new myDate(14, 6, 2023);
+
+    // truy cập phương thức getDay -> Hiển thị
+    let day = date.getDay();
+    let month = date.getMonth();
+    let year = date.getYear();
+
+    alert(day + '/' + month + '/' + year);
+
+    // truy cập phương thức setDay -> getDay -> Hiển thị
+    date.setDay(20);
+    date.setMonth(11);
+    date.setYear(2000);
+
+    day = date.getDay();
+    month = date.getMonth();
+    year = date.getYear();
+
+
+    alert(day + '/' + month + '/' + year);
+
+    // truy cập phương thức setDate
+    date.setDate(15,9,2000);
+
+    day = date.getDay();
+    month = date.getMonth();
+    year = date.getYear();
+
+    alert(day + '/' + month + '/' + year);
+
+    // truy cập phương thức toString()
+    //alert(date.toString());
+
+</script>
+</body>
+</html>

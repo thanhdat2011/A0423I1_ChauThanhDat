@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Product Manager</h1>
+</div>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Seri</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody> </tbody>
+    </table>
+</div>
+<table>
+    <tr>
+        <td>
+            <div>
+                <label>Id</label>
+                <input type="text" id="id" placeholder="@example Iphone">
+            </div>
+            <div>
+                <label>Name</label>
+                <input type="text" id="name" placeholder="@example Iphone">
+            </div>
+            <div>
+                <label>Seri</label>
+                <input type="text" id="seri" placeholder="@example 12345">
+            </div>
+            <div>
+                <label>Quantity</label>
+                <input type="text" id="quantity" placeholder="@example 1 or 2">
+            </div>
+            <div>
+                <label>Price</label>
+                <input type="text" id="price" placeholder="@example 100">
+            </div>
+            <div>
+                <button id="add" onclick="save()">Save</button>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    let productList = [];
+    let isEdit = false;
+    class Product {
+        constructor(id, name, seri, quantity, price) {
+            this.id = id;
+            this.name = name;
+            this.seri = seri;
+            this.quantity = quantity;
+            this.price = price;
+        }
+    }
+
+    class ProductService {
+        edit(product) {
+            for (let i = 0; i < productList.length; i++) {
+                if (productList[i].id == product.id) {
+                    productList[i] = product;
+                    break;
+                }
+            }
+        }
+        add(product) {
+            productList.push(product);
+        }
+        delete(name) {
+            for (let i = 0; i < productList.length; i++) {
+                if (productList[i].name == name) {
+                    productList.splice(i, 1);
+                    break;
+                }
+            }
+        }
+    }
+
+    let productService = new ProductService();
+
+    function showProducts() {
+        let res = '';
+        for (let i = 0; i < productList.length; i++) {
+            res += `
+                <tr>
+                    <td>${productList[i].id}</td>
+                    <td>${productList[i].name}</td>
+                    <td>${productList[i].seri}</td>
+                    <td>${productList[i].quantity}</td>
+                    <td>${productList[i].price}</td>
+                    <td>
+                        <button onclick="update('${productList[i].id}','${productList[i].name}','${productList[i].seri}','${productList[i].quantity}','${productList[i].price}')">Edit</button>
+                        <button onclick="deleteA('${productList[i].name}')">Delete</button>
+                    </td>
+                </tr>
+                `
+        }
+        document.querySelector('tbody').innerHTML = res;
+    }
+    function save() {
+        const productName = document.getElementById('name').value;
+        p = new Product(id.value, productName, seri.value, quantity.value, price.value);
+        console.log(isEdit);
+        console.log(p);
+        if (isEdit) {
+            productService.edit(p);
+        } else {
+            productService.add(p);
+        }
+        showProducts();
+    }
+    function deleteA(name) {
+        productService.delete(name);
+        showProducts();
+    }
+    function update(id, name, seri, quantity, price) {
+        document.getElementById('id').value = id;
+        document.getElementById('name').value = name;
+        document.getElementById('seri').value = seri;
+        document.getElementById('quantity').value = quantity;
+        document.getElementById('price').value = price;
+        const productName = document.getElementById('name').value;
+        isEdit = true;
+    }
+    showProducts();
+</script>

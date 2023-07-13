@@ -3,117 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            border: 1px solid;
+        }
+
+        table td {
+            border: 1px solid;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: yellow;
+        }
+
+        table th:first-child {
+            width: 3%;
+        }
+
+        table th:last-child {
+            width: 10%;
+        }
+
+        h1{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-<div id="menu">
-    <p>1.Cafe</p>
-    <p>2.Cam vat</p>
-    <p>3.ca rot</p>
-    <p>4.ca chua</p>
-    <p>5.nuoc loc</p>
-    <p>6.nuoc dua</p>
-</div>
-<div>
-    <input id="choose" type="text">
-    <button onclick="submit()">submit</button>
-</div>
+<table>
+    <thead>
+    <th>#</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Action</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Cafe</td>
+        <td>5</td>
+        <td>
+            <button onclick="addToCart('Cafe', 5, this)">Add to cart</button>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Orange juice</td>
+        <td>10</td>
+        <td>
+            <button onclick="addToCart('Orange juice', 10, this)">Add to cart</button>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Carrot juice</td>
+        <td>15</td>
+        <td>
+            <button onclick="addToCart('Carrot juice', 15, this)">Add to cart</button>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Tomato juice</td>
+        <td>20</td>
+        <td>
+            <button onclick="addToCart('Tomato juice', 20, this)">Add to cart</button>
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Water</td>
+        <td>25</td>
+        <td>
+            <button onclick="addToCart('Water', 25, this)">Add to cart</button>
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Coconut water</td>
+        <td>30</td>
+        <td>
+            <button onclick="addToCart('Coconut water', 30, this)">Add to cart</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
 
-<br>
+<h2>
 
-<div>
-    <button onclick="display_order()">Display order</button>
-</div>
-
-<br>
-
-<div id="order_list">
-
-</div>
-
-<br>
-
-<div>
-    <button onclick="payment()">Payment</button>
-</div>
-
-<div id="payment"></div>
+</h2>
+<h1></h1>
 <script>
-    let arrOrder = Array();
-    let arrSpend = Array();
-    let spend = 0;
-    let i =0;
-    let pay = 0;
-
-    function submit() {
-            let choose = parseInt(document.getElementById('choose').value);
-            switch (choose) {
-                case 1 :
-                    name = "coffee";
-                    price = 15000;
-                    alert('Price of '+ name + ' is ' + price);
-                    break;
-                case 2 :
-                    name = "Cam vat";
-                    price = 30000;
-                    alert('Price of '+ name + ' is ' + price);
-                    break;
-                case 3 :
-                    name = "Ca rot";
-                    price = 15000;
-                    alert('Price of '+ name + ' is ' + price);
-                    break;
-                case 4 :
-                    name = "Ca chua";
-                    price = 15000;
-                    alert('Price of '+ name + ' is ' + price);
-                    break;
-                case 5 :
-                    name = "Nuoc loc";
-                    price = 10000;
-                    alert('Price of '+ name + ' is ' + price);
-                    break;
-                case 6 :
-                    name = "Nuoc dua";
-                    price = 25000;
-                    alert('Price of '+ name + ' is ' + price);
-                    break;
-                default :
-                    alert("INVALID OPTION");
-
-            }
-            document.getElementById('choose').value = "";
-            addOrder();
-    }
-
-
-
-    function addOrder(){
-        let amount = parseInt(prompt('Amount : '));
-
-        spend = amount * price;
-        addSpend(spend);
-
-        e = 'Drink : ' + name + ' -----' + ' Amount : ' + amount + ' -----' + 'price : ' + price;
-
-        document.getElementById('order_list').innerHTML = e;
-    }
-
-    function addSpend(a) {
-        arrSpend.push(a);
-    }
-    
-    // function display_order() {
-    //     for (i=0; i<orderArr.length; i++){
-    //         document.getElementById('displayArr').innerHTML = orderArr[i];
-    //     }
-    // }
-
-    function payment() {
-        for (i = 0; i < arrSpend.length; i++) {
-            pay += arrSpend[i];
-        }
-        document.getElementById('payment').innerHTML = "Payment " + pay;
-    }
+    let res = "";
+    let sum = 0;
+    const addToCart = (name, price, e) => {
+        const quantity = +prompt(`You order with ${name}\nPlease enter quantity`)
+        let total = price * quantity;
+        sum += total;
+        res += `<br> ${quantity} ${name}: ${total}$`
+        document.querySelector("h2").innerHTML = res;
+        document.querySelector("h1").innerHTML = "Total: " + sum;
+        e.disabled = true;
+    };
 </script>
 </body>
 </html>

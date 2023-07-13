@@ -6,6 +6,43 @@
 </head>
 <body>
 
+<script>
+    let arr1 = Array();
+    let arr2 = Array();
 
+    let i = 0;
+    let j = 0;
+    do {
+        num1 = parseInt(prompt('Nhap mang 1 : '));
+        if (num1 === 0) break;
+        arr1[i] = num1;
+        i++;
+    } while (true);
+
+    console.log(arr1);
+
+    do {
+        num1 = parseInt(prompt('Nhap mang 2 : '));
+        if (num1 === 0) break;
+        arr2[j] = num1;
+        j++;
+    } while (true);
+
+    console.log(arr2);
+
+    for (j=0; j<arr2.length;){
+        for (i=0; i<arr1.length;){
+            if (arr1[i] === arr2[j]) {
+               arr2.splice(j,1);
+               arr1.splice(i,1);
+               continue;
+            }
+            i++;
+        }
+        j++;
+    }
+
+    console.log(arr2);
+</script>
 </body>
 </html>

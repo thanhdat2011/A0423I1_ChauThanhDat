@@ -12,24 +12,46 @@
     // Ví dụ có mảng chuỗi như sau: myColor = ["Red", "Green", "White", "Black"];
     // Sau khi thực thi chương trình sẽ trả về dạng như sau :
     //     "Red,Green,White,Black"
-    let array1  = ['rEd','bLUe','gReeN','orANge','pURplE','DoG','cAt'];
-    dau_phay = array1.toString();
-    alert(dau_phay);
+
+    // let array1  = ['rEd','bLUe','gReeN','orANge','pURplE','DoG','cAt'];
+    // dau_phay = array1.toString();
+    // alert(dau_phay);
 
     // Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn.
     // Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.
-    let array2 = Array();
-    let index = 0;
-    do {
-        let inputNum = parseInt(prompt('Nhap n :'));
-        if (inputNum === 0){
-            break;
+
+    // const str= prompt();
+    // const result = [str[0]];
+    //
+    // for(let x=1; x< str.length; x++)
+    // {
+    //     if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+    //     {
+    //         result.push('-', str[x]);
+    //     }
+    //     else
+    //     {
+    //         result.push(str[x]);
+    //     }
+    // }
+    //
+    // console.log(result);
+    // console.log(result.join(''));
+
+    // uppercase - lowercase
+    let s = prompt();
+    let a = [];
+
+    for (let i = 0; i < s.length; i++) {
+        if(s[i].toUpperCase() === s[i]){
+            a.push(s[i].toLowerCase());
         }
-        array2[index] = inputNum;
-        index++;
-    } while (true);
+        else {
+            a.push(s[i].toUpperCase());
+        }
+    }
 
-
+    console.log(a.join(""));
 
 
 </script>

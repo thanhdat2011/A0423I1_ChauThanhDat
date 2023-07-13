@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    function countPrimeInMatrix(m,n){
+        let count = 0;
+
+
+        for (let i = 0; i < m; i++) {
+            a[i] = [];
+            for (let j = 0; j < n; j++) {
+                a[i][j] = Math.round(Math.random()*100);
+                if(isPrime(a[i][j])){
+                    console.log(a[i][j]);
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    function isPrime(val){
+        if(val < 2){
+            return false;
+        }
+
+        for(let i=2; i<val; i++){
+            if(val%i===0){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    const m = +prompt("enter m");
+    const n = +prompt("enter n");
+
+    console.log(a);
+    console.log(countPrimeInMatrix(m,n));
+</script>
+</body>
+</html>

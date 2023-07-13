@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()" >
+<img id="nobita" src="https://james.codegym.vn/pluginfile.php/51884/mod_assign/intro/1.png">
+
+<script>
+    let moveNobita = null;
+    moveNobita = document.getElementById('nobita');
+    function init() {
+        moveNobita = document.getElementById('nobita');
+        moveNobita.style.position = 'relative';
+        moveNobita.style.height = '100px';
+        moveNobita.style.width = '80px';
+    }
+    window.onload = init()
+    function downArrowPressed() {
+        let element = document.getElementById('nobita');
+        element.style.top = parseInt(element.style.top) + 10 +'px';
+    }
+    function upArrowPressed() {
+        let element = document.getElementById('nobita');
+        element.style.top = parseInt(element.style.top) - 10 +'px';
+    }
+    function rightArrowPressed() {
+        let element = document.getElementById('nobita');
+        element.style.left = parseInt(element.style.left) + 10 +'px';
+    }
+    function leftArrowPressed() {
+        let element = document.getElementById('nobita');
+        element.style.left = parseInt(element.style.left) - 10 +'px';
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+</script>
+
+</body>
+</html>

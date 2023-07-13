@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = Array();
+    let index = 0;
+    let sum = 0;
+    let count = 0;
+
+    do {
+        let num = parseFloat(prompt("Input interger to array (input 0 to stop) (Max 50 intergers)"));
+        if (num === 0) break;
+        if (Number.isInteger(num)) {
+            arr[index] = num;
+        } else  {
+            alert('Not interger');
+            continue;
+        }
+        index++;
+    } while (index < 50);
+
+    console.log(arr);
+
+    function result() {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 3 === 0) {
+                sum += arr[i];
+                count++;
+                console.log(arr[i]);
+            }
+        }
+        return  sum/count;
+    }
+
+    console.log('Average = ' + result());
+</script>
+</body>
+</html>

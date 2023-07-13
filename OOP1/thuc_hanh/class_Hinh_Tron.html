@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let circle = function (radius) {
+        this.radius = radius;
+        this.area = Math.PI*radius*radius;
+        this.getRadius = function () {
+            return this.radius;
+        }
+        this.getArea = function () {
+            return this.area;
+        }
+        this.setRadius = function (radius) {
+            this.radius = radius;
+            this.area = Math.PI*radius*radius;
+        }
+    };
+
+    // tạo đối tượng circle1
+    let circle1 = new circle(2);
+    let radius = circle1.getRadius();
+    let area = circle1.getArea();
+    alert('Radius : '+ radius + ' ; Area : '+ area);
+
+    // truy cập phương thức setRadius (thay đổi bán kính)
+    circle1.setRadius(5);
+    radius = circle1.getRadius();
+    area = circle1.getArea();
+    alert('Radius : '+ radius + ' ; Area : '+ area);
+
+    // bán kính = 10
+    circle1.setRadius(10);
+    radius = circle1.getRadius();
+    area = circle1.getArea();
+    alert('Radius : '+ radius + ' ; Area : '+ area);
+
+</script>
+</body>
+</html>

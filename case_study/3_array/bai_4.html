@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h1>MENU</h1>
+<table id="output" border = '1px solid black' style="font-size:20px"></table><br>
+
+<h2>Order List</h2>
+
+<input id="payment" type="button" value="Payment" onclick="payment()">
+<h3 id="orderList"></h3>
+<script>
+    let dataHTML = "";
+    //let arrayOrder = [];
+    let spending = 0;
+
+    let arrayDrink = [
+        {name:'Cafe' , price: 12000},
+        {name:'Orange Juice' , price: 30000},
+        {name:'Tomato Juice' , price: 15000 },
+        {name:'Carrot', price: 15000 },
+        {name:'Coconut', price: 25000 },
+        {name:'Aquafina', price: 10000 }
+    ];
+
+    function showTable(){
+        dataHTML = "";
+        dataHTML += "<tr>";
+        dataHTML += "<th colspan='2'>Drinks</th>";
+        dataHTML += "</tr>";
+        for (let i in arrayDrink) {
+            dataHTML += "<tr>" +
+                    "<td>" + arrayDrink[i]['name'] + "</td>" +
+                    "<td><input type='button' value='choose' onclick='orderDrink("+i+")'></td>"
+                    "</tr>";
+        }
+        document.getElementById('output').innerHTML = dataHTML;
+    }
+
+    showTable();
+
+    function orderDrink(i) {
+        let answer = confirm('you want order ' +arrayDrink[i]['name'])
+        if (answer) {
+                alert('Price of '+ arrayDrink[i]['name'] + ' is '+ arrayDrink[i]['price']);
+                let amount = parseInt(prompt('Amount of this drink'));
+                let total = arrayDrink[i]['price'] * amount;
+                spending += total;
+               document.querySelector("h2").innerHTML = "<br>"  + arrayDrink[i]['name'] + ': ' + amount;
+                 // arrayOrder.push(arrayDrink[i]);
+                // arrayOrder[i]['amount'] = amount;
+                //spend();
+
+        }
+    }
+
+    //console.log(arrayOrder);
+
+    // function spend() {
+    //     for (let i in arrayOrder){
+    //         spendOf1 = arrayOrder[i]['price'] * arrayOrder[i]['amount'];
+    //         spending += spendOf1;
+    //     }
+    //     return spending;
+    // }
+
+    function payment() {
+        document.querySelector("h3").innerHTML = "Total: " + spending;
+        //alert(spending);
+    }
+
+
+    // for (let i =0; i<arrayOrder; i++) {
+    //     document.getElementById('orderList').innerHTML = arrayOrder[i][name];
+    //     console.log(arrayOrder);
+    // }
+</script>
 </body>
 </html>

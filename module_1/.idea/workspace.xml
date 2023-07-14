@@ -19,76 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89f89dec-241f-4959-b011-d43fdd5fe3ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1_Final_exam/bai_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_Final_exam/bai_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_Final_exam/bai_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML-Form-Table/bai-hoc/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP2/bai_tap/manage_product_oop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/5_array/bai_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/5_array/bai_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/5_array/bai_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/6_OOP/bai_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/6_OOP/manage_P_OOP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSI.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git-HTML/bài-tập/tạo-CV.html" beforeDir="false" afterPath="$PROJECT_DIR$/Git-HTML/bài-tập/tạo-CV.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git-HTML/bài-tập/tạo-danh-sách.html" beforeDir="false" afterPath="$PROJECT_DIR$/Git-HTML/bài-tập/tạo-danh-sách.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/basic-table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/google-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/quiz.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/survey-client-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/table-advance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/table-advance/table-advance.css" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/table-advance/table-advance.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Form-Table/thuc-hanh/ád.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/class_phone.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/class_temperature.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP1/thuc_hanh/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/demo1.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP1/thuc_hanh/demo1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/lop_DATE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/lop_Hinh_Tron.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP1/thuc_hanh/lop_rectangle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP2/thuc_hanh/den_pin.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP2/thuc_hanh/den_pin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/3_array/bai_4_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/3_array/bai_4_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/4_string/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/4_string/bai_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/4_string/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/4_string/bai_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/4_string/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/4_string/bai_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hàm_2/bai_tap/isPalindrome.html" beforeDir="false" afterPath="$PROJECT_DIR$/hàm_2/bai_tap/isPalindrome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hàm_2/bai_tap/manage_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/hàm_2/bai_tap/manage_product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/Biến_kiểu_dữ_liệu_toán_tử/thuc_hanh/bai_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/Tổng_quan/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/Tổng_quan/alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/array_1/bai_tap/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/array_1/bai_tap/bai_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/array_1/bai_tap/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/array_1/bai_tap/bai_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/array_1/thuc_hanh_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/array_1/thuc_hanh_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/array_1/thuc_hanh_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/array_1/thuc_hanh_4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/array_2/bai_tap/ham_co_san_cua_mang.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/array_2/bai_tap/ham_co_san_cua_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/admin_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/if_else.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/năm_nhuận.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/switch_case_ex1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/switch_case_ex2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/switch_case_ex3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/toán_tử_3_ngôi_ex1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_1/toán_tử_3_ngôi_ex2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_2/keyboard_press_event.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/cấu_trúc_điều_kiện_2/mouse_event.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/do_while_ex1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/for_ex1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/for_ex2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/loop_lồng_nhau_(check).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/while_ex1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp/thực_hành/while_ex2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp_1/bài_tập/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/vòng_lặp_1/bài_tập/bai_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_script/vòng_lặp_1/bài_tập/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/java_script/vòng_lặp_1/bài_tập/bai_8.html" afterDir="false" />
-    </list>
+    <list default="true" id="89f89dec-241f-4959-b011-d43fdd5fe3ed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,6 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -207,6 +139,7 @@
       <workItem from="1688566638126" duration="70000" />
       <workItem from="1688721027543" duration="2960000" />
       <workItem from="1688725506081" duration="68000" />
+      <workItem from="1689326580513" duration="15000" />
     </task>
     <servers />
   </component>

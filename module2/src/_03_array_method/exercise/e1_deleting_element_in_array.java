@@ -28,6 +28,8 @@ public class e1_deleting_element_in_array {
             }
         }
 
+        //
+
         if (!isExist) {
             System.out.println(num + " is not exist");
         } else {

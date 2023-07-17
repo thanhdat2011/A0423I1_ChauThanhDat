@@ -30,7 +30,7 @@ public class e5_min_number_in_2D_matrix {
         findMin(arr);
     }
 
-    public static void  findMin(double arr[][]) {
+     static void  findMin(double[][] arr) {
         double min = arr[0][0];
         int m=0;
         int n=0;

@@ -30,7 +30,7 @@ public class e4_max_number_in_2D_matrix {
         findMax(arr);
     }
 
-    public static void  findMax(double arr[][]) {
+     static void  findMax(double[][] arr) {
         double max = arr[0][0];
         int m=0;
         int n=0;

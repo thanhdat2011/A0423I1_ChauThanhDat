@@ -2,9 +2,11 @@ package _05_accessModifier_staticMethod_staticProperty.exercise.e2_Chi_ghi_class
 
 public class Test_Student {
     public static void main(String[] args) {
-        Student st1 = new Student();
-        st1.setName("Dat");
-        st1.setClasses("IT32");
-        System.out.println(st1);
+        Student student1 = new Student();
+        Student student2 = new Student();
+        Student.setClasses("AOAOAO");
+        student2.setName("DAT");
+        System.out.println(student1);
+        System.out.println(student2);
     }
 }

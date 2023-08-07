@@ -6,5 +6,7 @@ public class p1_system_time {
     public static void main(String[] args) {
         Date now = new Date();
         System.out.println("Now is : " + now);
+
+        System.out.println(now.getTime());
     }
 }

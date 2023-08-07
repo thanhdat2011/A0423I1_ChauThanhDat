@@ -1,4 +1,4 @@
-package _05_accessModifier_staticMethod_staticProperty.exercise.e2_Chi_ghi_class;
+package _05_static.exercise.e2_Chi_ghi_class;
 
 public class Test_Student {
     public static void main(String[] args) {

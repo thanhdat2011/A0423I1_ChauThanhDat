@@ -23,7 +23,7 @@ public class Test_Resize {
             if (e instanceof Circle) {
                 System.out.println("------Cirle------");
                 System.out.printf("Before resize = %.2f %n", ((Circle) e).getArea());
-                ((Circle) e).resize(Math.random()*100);
+                ((Circle) e).resize(1);
                 System.out.printf("After resize = %.2f %n", ((Circle) e).getArea());
             }
             if (e instanceof Rectangle) {

@@ -1,6 +1,8 @@
 package _06_Inheritance.practice.Shape;
 
-public class Square extends Rectangle {
+import _07_Abstract_Interface.Exercise.Colorable.Colorable;
+
+public class Square extends Rectangle implements Colorable {
     public Square() {
         super(1,1);
     }
@@ -35,5 +37,14 @@ public class Square extends Rectangle {
         return "Square{" + getSide() +
                 "}" +
                 " which is a subclass of " + super.toString();
+    }
+
+
+    // this part for ex Colorable in _07_Abstract_Interface
+
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides");
     }
 }

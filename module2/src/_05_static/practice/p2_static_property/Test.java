@@ -1,4 +1,4 @@
-package _05_accessModifier_staticMethod_staticProperty.practice.p2_static_property;
+package _05_static.practice.p2_static_property;
 
 public class Test {
     public static void main(String[] args) {

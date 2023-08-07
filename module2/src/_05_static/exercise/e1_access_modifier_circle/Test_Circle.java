@@ -1,4 +1,4 @@
-package _05_accessModifier_staticMethod_staticProperty.exercise.e1_access_modifier_circle;
+package _05_static.exercise.e1_access_modifier_circle;
 
 public class Test_Circle {
     public static void main(String[] args) {

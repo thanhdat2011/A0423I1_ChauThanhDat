@@ -1,6 +1,8 @@
 package _06_Inheritance.practice.Shape;
 
-public class Rectangle extends Shape {
+import _07_Abstract_Interface.Exercise.Resizeable.IResizeable;
+
+public class Rectangle extends Shape implements IResizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -45,5 +47,13 @@ public class Rectangle extends Shape {
                 ", length=" + length +
                 '}' +
                 " which is subclass of " + super.toString();
+    }
+
+
+    // This part for ex Resizeable in _07_Abstract_Interface
+    @Override
+    public void resize(double percent) {
+       width += width*percent;
+       length += length*percent;
     }
 }

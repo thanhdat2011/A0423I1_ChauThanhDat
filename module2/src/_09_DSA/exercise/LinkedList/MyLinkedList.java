@@ -7,6 +7,7 @@ public class MyLinkedList<E> {
     private int numNodes;
     public MyLinkedList(Object data) {
        head = new Node(data);
+       numNodes++;
     }
     class Node {
         private Node next;
@@ -22,6 +23,9 @@ public class MyLinkedList<E> {
         return numNodes;
     }
     public void add(int index,E element) {
+        if (index < 0 || index > size()) {
+            throw new IndexOutOfBoundsException();
+        }
         Node temp = head;
         Node holder;
         for (int i=0; i < index-1 && temp.next != null; i++) {
@@ -63,18 +67,31 @@ public class MyLinkedList<E> {
             return (E) current.data;
         }
     }
-//    public void remove(E e) {                        //0     1       2       3       4
-//        Node temp = head;
-//        if (temp.data.equals(e)) {
-//            temp = temp.next;
-//        } else
-//            Node previous = temp.next;
-//            for (int i=0; i<numNodes; i++) {
-//                if (temp.next.equals(e)) {
-//
-//                }
-//            }
-//    }
+    public void remove(E e) {                        //0     1       2       3       4
+        Node previous = head;
+        if (head.data.equals(e)) removeFirst();
+        else
+            for (int i=0; i<size()-2;i++) {
+                if (previous.next.data.equals(e)) {
+                    Node current = previous.next;
+                    previous.next = current.next;
+                }
+                previous = previous.next;
+            }
+        numNodes--;
+    }
+    public void removeFirst() {
+        head = head.next;
+        numNodes--;
+    }
+    public void removeLast() {
+        Node temp = head;
+        for (int i=0; i<size()-2;i++) {
+            temp = temp.next;
+        }
+        temp.next = null;
+        numNodes--;
+    }
     public boolean contains(E e) {
         Node temp = head;
         while(temp != null) {
@@ -113,17 +130,17 @@ public class MyLinkedList<E> {
         }
         return null;
     }
-    public E getLast() {
+    public E getLast() {                    //0     1       2       3       4
         Node temp = head;
         if (temp.next == null) getFirst();
-        else for (int i=0; i<numNodes;i++) {
+        else for (int i=0; i<numNodes-1;i++) {
             temp = temp.next;
         }
         return (E) temp.data;
     }
     public void clear() {
         head = null;
-        numNodes = 1;
+        numNodes = 0;
     }
     public void printList() {
         Node temp = head;

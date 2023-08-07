@@ -1,4 +1,4 @@
-package _05_accessModifier_staticMethod_staticProperty.practice.p1_static_method;
+package _05_static.practice.p1_static_method;
 
 public class testStaticMethod {
     public static void main(String[] args) {

@@ -7,6 +7,7 @@ public class ReverStringbyStack {
     public static void main(String[] args) {
         String string;
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter String");
         string = sc.nextLine();
 
         char[] str = string.toCharArray();

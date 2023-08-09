@@ -1,6 +1,4 @@
-package _09_DSA.demo;
-
-import java.util.ArrayList;
+package _09_DSA_List.demo;
 
 import java.util.LinkedList;
 import java.util.List;

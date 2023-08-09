@@ -1,4 +1,4 @@
-package _09_DSA.demo;
+package _09_DSA_List.demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package _09_DSA.exercise.ArrayList;
+package _09_DSA_List.exercise.ArrayList;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package _09_DSA.practice.Simple_LinkedList;
+package _09_DSA_List.practice.Simple_LinkedList;
 
 public class MyLinkedList_Test {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package _09_DSA.exercise.LinkedList;
-
-import _06_Inheritance.exercise.Point_Moveable_Point.Point;
+package _09_DSA_List.exercise.LinkedList;
 
 public class MyLinkedList<E> {
     private Node head;

@@ -1,4 +1,4 @@
-package _09_DSA.practice.Simpl_ArrayList;
+package _09_DSA_List.practice.Simpl_ArrayList;
 
 import java.util.Arrays;
 

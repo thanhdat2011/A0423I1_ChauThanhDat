@@ -1,5 +1,7 @@
 package _11_DSA_Stack_Queue.Demo;
 
+import java.util.Deque;
+import java.util.Queue;
 import java.util.Stack;
 
 public class DemoStack {

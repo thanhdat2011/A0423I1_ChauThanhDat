@@ -11,10 +11,10 @@ public class DemoQueue {
         queue.add(3);
         queue.add(4);
         queue.offer(10);
-        queue.remove();
+        System.out.println(queue.remove());
         System.out.println(queue.poll());
         System.out.println(queue);
-        //System.out.println(queue.peek());
+        System.out.println(queue.peek());
         System.out.println(queue.element());
 
     }

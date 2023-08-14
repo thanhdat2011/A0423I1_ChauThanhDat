@@ -7,7 +7,7 @@ import _12_Java_Collection_Framework.Exercise.ProductManagement.Repository.Produ
 public class ProductServiceImpl implements ProductService{
     private ProductRepo repo = new ProductRepoImpl();
         @Override
-        public void findall() {
+        public void findAll() {
             repo.findall();
         }
 
@@ -31,4 +31,12 @@ public class ProductServiceImpl implements ProductService{
             repo.searchProduct(name);
         }
 
+        @Override
+        public void arrangeAscendingProduct() {
+            repo.arrangeAscendingProduct();
+        }
+        @Override
+        public void arrangeDecendingProduct() {
+            repo.arrangeDecendingProduct();
+        }
 }

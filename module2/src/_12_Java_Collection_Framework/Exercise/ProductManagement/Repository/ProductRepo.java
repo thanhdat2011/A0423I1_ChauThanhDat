@@ -8,5 +8,6 @@ public interface ProductRepo {
     void updateProduct(int id);
     void deleteProduct (int id);
     void searchProduct(String name);
-
+    void arrangeAscendingProduct();
+    void arrangeDecendingProduct();
 }

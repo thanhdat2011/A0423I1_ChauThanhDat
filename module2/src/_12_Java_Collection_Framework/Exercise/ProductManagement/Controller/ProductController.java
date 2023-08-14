@@ -19,11 +19,13 @@ public class ProductController {
             System.out.println("3. Update product (by id)");
             System.out.println("4. Delete product (by id)");
             System.out.println("5. Search product (by name)");
+            System.out.println("6. Sort product by ascending (by price)");
+            System.out.println("7. Sort product by descending (by price)");
             System.out.print("Your selecting : ");
             select = Integer.parseInt(sc.nextLine());
             System.out.printf("%n");
             switch (select) {
-                case 1: productService.findall();
+                case 1: productService.findAll();
                     break;
                 case 2:
                     System.out.print("Enter id : ");
@@ -51,6 +53,14 @@ public class ProductController {
                     System.out.print ("Search product (by name) : ");
                     String input2 = sc.nextLine();
                     productService.searchProduct(input2);
+                    break;
+                case 6:
+                    System.out.println("Sort product by ascending (by price)");
+                    productService.arrangeAscendingProduct();
+                    break;
+                case 7 :
+                    System.out.println("Sort product by descending (by price)");
+                    productService.arrangeDecendingProduct();
                     break;
                 case 0:
                     System.exit(0);

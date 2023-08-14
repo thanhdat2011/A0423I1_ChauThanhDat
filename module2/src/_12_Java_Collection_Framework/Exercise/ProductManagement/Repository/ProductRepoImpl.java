@@ -2,10 +2,7 @@ package _12_Java_Collection_Framework.Exercise.ProductManagement.Repository;
 
 import _12_Java_Collection_Framework.Exercise.ProductManagement.Model.Product;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 
 public class ProductRepoImpl implements ProductRepo{
     private static ArrayList<Product> productList;
@@ -60,5 +57,25 @@ public class ProductRepoImpl implements ProductRepo{
                 System.out.println(e);
             }
         }
+    }
+
+    @Override
+    public void arrangeAscendingProduct() {
+        Collections.sort(productList, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return o1.getPrice() - o2.getPrice();
+            }
+        });
+    }
+
+    @Override
+    public void arrangeDecendingProduct() {
+        Collections.sort(productList, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return o2.getPrice() - o1.getPrice();
+            }
+        });
     }
 }

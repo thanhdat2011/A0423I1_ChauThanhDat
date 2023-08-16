@@ -26,6 +26,8 @@ public class BubbleSortSample {
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
                 }
+
+                // Print each step of process
                 for (int e : arr) {
                     System.out.print(e + " ");
                 }

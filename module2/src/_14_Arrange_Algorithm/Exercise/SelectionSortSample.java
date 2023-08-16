@@ -29,6 +29,8 @@ public class SelectionSortSample {
             int temp = arr[i];
             arr[i] = arr[min];
             arr[min] = temp;
+
+            // Print each step of process
             for (int e: arr) {
                 System.out.print(e + " ");
             }

@@ -27,6 +27,8 @@ public class InsertionSortSample {
                 j--;
             }
             arr[j+1] = temp;
+
+            // Print each step of process
             for (int e: arr) {
                 System.out.print(e + " ");
             }

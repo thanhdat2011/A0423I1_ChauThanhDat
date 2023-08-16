@@ -1,4 +1,4 @@
-package _14_Arrange_Algorithm.Practice;
+package _14_Arrange_Algorithm.Exercise;
 
 public class InsertionSortSample {
     public static void main(String[] args) {

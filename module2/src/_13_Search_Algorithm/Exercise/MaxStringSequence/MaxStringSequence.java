@@ -1,4 +1,4 @@
-package _13_Search_Algorism.Exercise.MaxStringSequence;
+package _13_Search_Algorithm.Exercise.MaxStringSequence;
 
 import java.util.LinkedList;
 import java.util.Scanner;

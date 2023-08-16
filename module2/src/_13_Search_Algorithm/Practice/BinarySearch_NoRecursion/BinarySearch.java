@@ -1,4 +1,4 @@
-package _13_Search_Algorism.Practice.BinarySearch_NoRecursion;
+package _13_Search_Algorithm.Practice.BinarySearch_NoRecursion;
 
 import java.util.Arrays;
 

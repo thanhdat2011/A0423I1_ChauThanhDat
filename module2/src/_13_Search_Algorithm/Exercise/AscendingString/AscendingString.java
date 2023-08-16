@@ -1,8 +1,6 @@
-package _13_Search_Algorism.Exercise.AscendingString;
+package _13_Search_Algorithm.Exercise.AscendingString;
 
-import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 
 public class AscendingString {

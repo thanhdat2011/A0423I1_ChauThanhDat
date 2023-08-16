@@ -1,4 +1,4 @@
-package _13_Search_Algorism.Exercise.BinarySearch_UsingRecursion;
+package _13_Search_Algorithm.Exercise.BinarySearch_UsingRecursion;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package _15_Debug.Practice.ArrayIndexOutOfBoundsException;
+package _15_Exception_Debug.Practice.ArrayIndexOutOfBoundsException;
 
 import java.util.Random;
 import java.util.Scanner;

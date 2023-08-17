@@ -1,4 +1,4 @@
-package _15_Debug.Practice.NumberFormatException;
+package _15_Exception_Debug.Practice.NumberFormatException;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package _15_Debug.Exercise.IllegalTriangleException;
+package _15_Exception_Debug.Exercise.IllegalTriangleException;
 
 import java.util.Scanner;
 

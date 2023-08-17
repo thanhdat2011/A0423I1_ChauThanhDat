@@ -1,4 +1,4 @@
-package _15_Debug.Demo.Checked_Unchecked_Exceptions;
+package _15_Exception_Debug.Demo.Checked_Unchecked_Exceptions;
 
 public class UncheckException {
     public static void main(String[] args) {

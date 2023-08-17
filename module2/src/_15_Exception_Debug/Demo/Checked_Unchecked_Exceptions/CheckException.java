@@ -1,6 +1,5 @@
-package _15_Debug.Demo.Checked_Unchecked_Exceptions;
+package _15_Exception_Debug.Demo.Checked_Unchecked_Exceptions;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 

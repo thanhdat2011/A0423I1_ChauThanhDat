@@ -1,4 +1,4 @@
-package _15_Debug.Demo.AgeException;
+package _15_Exception_Debug.Demo.AgeException;
 
 public class AgeException extends Exception{
     AgeException(String message){

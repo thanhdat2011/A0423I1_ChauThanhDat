@@ -6,19 +6,34 @@ import java.util.Scanner;
 public class AscendingString {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.print("Enter string : ");
-        String str = sc.nextLine();
+        System.out.print("Enter String : ");
+        String string = sc.nextLine();
 
         LinkedList<Character> result = new LinkedList<>();
-        result.add(str.charAt(0));
 
-        for (int i=1; i < str.length(); i++) {
-            if (str.charAt(i) > result.getLast()) {
-                result.add(str.charAt(i));
+        for (int i = 0; i < string.length(); i++) {
+
+            LinkedList<Character> temp = new LinkedList<>();
+            temp.add(string.charAt(i));
+
+            // add substring to temp
+            for (int j = i + 1; j < string.length(); j++) {
+                if (string.charAt(j) > temp.getLast()) {
+                    temp.add(string.charAt(j));
+                }
             }
+
+            // temp > result -> replace (find max substring sequence)
+            if (temp.size() > result.size()) {
+                result.clear();
+                result.addAll(temp);
+            }
+
+            // clear to add new substring
+            temp.clear();
         }
 
-        for (char e : result) {
+        for (Character e: result) {
             System.out.print(e);
         }
     }

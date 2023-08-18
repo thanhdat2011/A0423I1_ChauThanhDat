@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class MaxStringSequence {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+
         System.out.print("Enter String : ");
         String string = sc.nextLine();
 

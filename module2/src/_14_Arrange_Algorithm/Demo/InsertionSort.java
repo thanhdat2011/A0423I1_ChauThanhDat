@@ -3,7 +3,10 @@ package _14_Arrange_Algorithm.Demo;
 public class InsertionSort {
     public static void main(String[] args) {
         int[] arr = {9, 1, 8, 2, 7, 3, 6, 5, 4};
-
+//            1 9 8 2 7
+//            1 8 9 2 7
+//
+//
         insertionSort(arr);
 
         for (int i: arr) {

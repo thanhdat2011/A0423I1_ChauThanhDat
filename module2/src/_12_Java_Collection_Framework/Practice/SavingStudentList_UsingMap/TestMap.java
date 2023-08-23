@@ -14,6 +14,7 @@ public class TestMap {
         hashMap.put("Duy", 23);
         hashMap.put("Bui", 23);
         hashMap.put("Trung", 30);
+
         System.out.println(hashMap);
 
         Map<String, Integer> treeMap = new TreeMap<>(hashMap);

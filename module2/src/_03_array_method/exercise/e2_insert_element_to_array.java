@@ -1,5 +1,6 @@
 package _03_array_method.exercise;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class e2_insert_element_to_array {
@@ -42,6 +43,7 @@ public class e2_insert_element_to_array {
         } else {
             System.out.println("Invalid");
         }
+
     }
 
 

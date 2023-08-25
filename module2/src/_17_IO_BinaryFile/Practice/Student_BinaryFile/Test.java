@@ -23,8 +23,8 @@ public class Test {
             FileOutputStream fos = new FileOutputStream(path);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(students);
-            oos.close();
-            fos.close();
+//            oos.close();
+//            fos.close();
         }
         catch (IOException e) {
             e.printStackTrace();

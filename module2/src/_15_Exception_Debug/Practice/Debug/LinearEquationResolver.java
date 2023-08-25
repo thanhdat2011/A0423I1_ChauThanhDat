@@ -1,4 +1,4 @@
-package com.codegym;
+package _15_Exception_Debug.Practice.Debug;
 
 import java.util.Scanner;
 

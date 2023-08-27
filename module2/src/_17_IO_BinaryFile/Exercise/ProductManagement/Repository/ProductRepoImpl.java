@@ -86,8 +86,10 @@ public class ProductRepoImpl implements ProductRepo {
 
     @Override
     public void updateProduct(int id) {
+        boolean isExist = false;
         for (Product p : data) {
             if (p.getId() == id) {
+                isExist = true;
                 System.out.println("Product do exists !");
                 System.out.println(p);
 
@@ -108,10 +110,9 @@ public class ProductRepoImpl implements ProductRepo {
 
                 writeToFile(data);
             }
-            else {
-                System.out.println("ID doesn't exist !!!");
-                break;
-            }
+        }
+        if (!isExist) {
+            System.out.println("ID doesn't exist !!!");
         }
     }
 
@@ -124,6 +125,14 @@ public class ProductRepoImpl implements ProductRepo {
         catch (IOException ex) {
             ex.printStackTrace();
         }
+        finally {
+            try {
+                oos.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
     }
 
 }

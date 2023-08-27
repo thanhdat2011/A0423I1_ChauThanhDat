@@ -43,7 +43,7 @@ public class ProductController {
                     productService.addProduct(product);
                     break;
                 case 3:
-                    System.out.print("Enter id of product you want to update");
+                    System.out.print("Enter id of product you want to update : ");
                     int id3 = Integer.parseInt(sc.nextLine());
                     productService.updateProduct(id3);
                     break;

@@ -33,6 +33,10 @@ public class Circle {
         return Math.PI * radius * 2;
     }
 
+//    public void sayHello() {
+//        System.out.println("hello");
+//    }
+
     @Override
     public String toString() {
         return "Circle{" +

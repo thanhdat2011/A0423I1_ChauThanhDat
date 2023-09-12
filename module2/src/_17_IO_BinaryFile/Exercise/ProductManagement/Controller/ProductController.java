@@ -31,16 +31,30 @@ public class ProductController {
                     productService.findAll();
                     break;
                 case 2:
-                    System.out.print("Enter id of product : ");
-                    int idP = Integer.parseInt(sc.nextLine());
-                    System.out.print("Enter name of product : ");
-                    String nameP = sc.nextLine();
-                    System.out.print("Enter color of product : ");
-                    String colorP = sc.nextLine();
-                    System.out.print("Enter price of product : ");
-                    int priceP = Integer.parseInt(sc.nextLine());
-                    Product product = new Product(idP, nameP, colorP, priceP);
-                    productService.addProduct(product);
+                    boolean isValid = false;
+                    do {
+                        try {
+                            System.out.print("Enter id of product : ");
+                            int idP = Integer.parseInt(sc.nextLine());
+                            System.out.print("Enter name of product : ");
+                            String nameP = sc.nextLine();
+                            System.out.print("Enter color of product : ");
+                            String colorP = sc.nextLine();
+                            System.out.print("Enter price of product : ");
+                            int priceP = Integer.parseInt(sc.nextLine());
+                            Product product = new Product(idP, nameP, colorP, priceP);
+                            isValid = true;
+
+                            productService.addProduct(product);
+                        }
+                        catch (NumberFormatException e) {
+                            System.out.println("PLS ENTER NUMBER !!!");
+                        }
+                        catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    } while (!isValid);
+
                     break;
                 case 3:
                     System.out.print("Enter id of product you want to update : ");

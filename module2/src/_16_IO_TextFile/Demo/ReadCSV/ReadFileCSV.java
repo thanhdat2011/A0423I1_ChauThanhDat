@@ -8,20 +8,20 @@ public class ReadFileCSV {
         BufferedReader br = null;
 
         try {
-           br = new BufferedReader(new FileReader(file));
-           String line = "";
-           while ((line = br.readLine()) != null) {
+            br = new BufferedReader(new FileReader(file));
+            String line = "";
+            while ((line = br.readLine()) != null) {
 
-               String[] row = line.split(",");
+                String[] row = line.split(",");
 
-               for (String e : row) {
-                   System.out.printf("%-10s", e);
-               }
-               System.out.println();
-           }
+                for (String e : row) {
+                    System.out.printf("%-10s", e);
+                }
+                System.out.println();
+            }
         }
         catch (Exception e) {
-           e.printStackTrace();
+            e.printStackTrace();
         }
         finally {
             try {

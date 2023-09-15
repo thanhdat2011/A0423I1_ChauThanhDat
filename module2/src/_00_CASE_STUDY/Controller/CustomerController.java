@@ -4,6 +4,7 @@ import _00_CASE_STUDY.Model.Customer;
 import _00_CASE_STUDY.Model.Employee;
 import _00_CASE_STUDY.Service.CustomerService.CustomerService;
 import _00_CASE_STUDY.Service.CustomerService.CustomerServiceImpl;
+import _00_Ex_Exam.Helper.Helper;
 
 import java.util.Scanner;
 
@@ -32,6 +33,8 @@ public class CustomerController {
                 case 3:
                     editCustomer();
                     break;
+                case 4:
+
                 case 0:
                     System.exit(0);
                 default:

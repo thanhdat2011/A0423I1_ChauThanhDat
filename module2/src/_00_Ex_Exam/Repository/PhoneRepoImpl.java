@@ -1,14 +1,9 @@
 package _00_Ex_Exam.Repository;
 
 import _00_Ex_Exam.Model.Phone;
-import _16_IO_TextFile.Exercise.ReadFileCSV.Nation;
-import _17_IO_BinaryFile.Exercise.ProductManagement.Model.Product;
 
-import javax.sound.midi.MidiFileFormat;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class PhoneRepoImpl implements PhoneRepo {
     private static Scanner sc = new Scanner(System.in);
@@ -32,31 +27,86 @@ public class PhoneRepoImpl implements PhoneRepo {
     }
 
     @Override
-    public void displayP() {
-        phoneList.forEach(System.out::println);
+    public List<Phone> displayP() {
+        return phoneList;
     }
 
     @Override
-    public void deleteP(int id) {
-        phoneList.removeIf(e -> e.getId() == id);
-        resetId();
-        writeCSV();
+    public boolean deleteById(int id) {
+        //phoneList.removeIf(e -> e.getId() == id);
+        // Nếu sử dụng vòng lặp foreach và cố gắng thêm/ xóa phần tử khỏi ArrayList bằng phương thức remove(),
+        // sẽ nhận được ConcurrentModificationException.
+
+        Iterator<Phone> iterator = phoneList.iterator();
+        while (iterator.hasNext()) {
+
+            Phone phone = iterator.next();
+
+            if (phone.getId() == id) {
+                iterator.remove();
+                resetId();
+                writeCSV();
+
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
-    public void findP(String name) {
+    public boolean deleteByName(String name) {
+
+        Iterator<Phone> iterator = phoneList.iterator();
+        while (iterator.hasNext()) {
+
+            Phone phone = iterator.next();
+
+            if (phone.getName().equals(name)) {
+                iterator.remove();
+                resetId();
+                writeCSV();
+
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public List<Phone> findByName(String name) {
         List<Phone> res = new ArrayList<>();
         for (Phone e: phoneList) {
             if (e.getName().equals(name)) {
                 res.add(e);
             }
         }
-        if (res.size() > 0) {
-            res.forEach(System.out::println);
-        } else {
-            System.out.println("Not Found !!!");
-        }
+
+        return res;
     }
+
+    @Override
+    public List<Phone> findByPrice(double price) {
+        List<Phone> res = new ArrayList<>();
+        for (Phone e: phoneList) {
+            if (e.getPrice() == price) {
+                res.add(e);
+            }
+        }
+
+        return res;
+    }
+
+    @Override
+    public void editById(int id) {
+        for (Phone e : phoneList) {
+            if (e.getId() == id) {
+                Phone phone = setPhone(id);
+                phoneList.set(phoneList.indexOf(e), phone);
+            }
+        }
+        writeCSV();
+    }
+
     public void resetId() {
         for (int i=0; i < phoneList.size(); i++) {
             if (phoneList.get(i).getId() != (i+1)) {
@@ -65,6 +115,35 @@ public class PhoneRepoImpl implements PhoneRepo {
         }
     }
 
+    @Override
+    public void sortByPrice() {
+        phoneList.sort(new Comparator<Phone>() {
+            @Override
+            public int compare(Phone o1, Phone o2) {
+                return (int) (o1.getPrice() - o2.getPrice());
+            }
+        });
+    }
+
+    @Override
+    public void sortById() {
+        phoneList.sort(new Comparator<Phone>() {
+            @Override
+            public int compare(Phone o1, Phone o2) {
+                return o1.getId() - o2.getId();
+            }
+        });
+    }
+
+    public Phone setPhone(int id) {
+        System.out.print("Name : ");
+        String nameP = sc.nextLine();
+        System.out.print("Price : ");
+        double priceP = Double.parseDouble(sc.nextLine());
+        System.out.print("Band : ");
+        String bandP = sc.nextLine();
+        return new Phone(id, nameP, priceP, bandP);
+    }
     public void readCSV() throws Exception {
         FileReader fileReader = new FileReader(FILE_PATH);
         BufferedReader br = new BufferedReader(fileReader);
@@ -91,7 +170,7 @@ public class PhoneRepoImpl implements PhoneRepo {
             for (Phone phone : phoneList) {
                 bw.write(phone.getId() + "," + phone.getName() + "," + phone.getPrice() + "," + phone.getBand() + "\n");
             }
-//            bw.write(phone.getId() + "," + phone.getName() + "," + phone.getPrice() + "," + phone.getBand() + "\n");
+
             bw.close();
         } catch (IOException e) {
             throw new RuntimeException(e);

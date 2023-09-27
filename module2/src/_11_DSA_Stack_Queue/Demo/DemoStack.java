@@ -1,13 +1,12 @@
 package _11_DSA_Stack_Queue.Demo;
 
-import java.util.Deque;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class DemoStack {
     public static void main(String[] args) {
         Stack<Object> stack = new Stack<>();
         stack.push("1");
+        System.out.println(stack.search("1"));
 //        stack.push("duy");
 //        stack.push("3");
 //        stack.push("dat");
@@ -21,5 +20,6 @@ public class DemoStack {
         Object a = stack.pop();
         System.out.println(a);
         System.out.println(stack);
+
     }
 }

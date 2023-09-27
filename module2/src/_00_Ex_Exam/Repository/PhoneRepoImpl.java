@@ -1,5 +1,6 @@
 package _00_Ex_Exam.Repository;
 
+import _00_Ex_Exam.Helper.Helper;
 import _00_Ex_Exam.Model.Phone;
 
 import java.io.*;
@@ -137,11 +138,11 @@ public class PhoneRepoImpl implements PhoneRepo {
 
     public Phone setPhone(int id) {
         System.out.print("Name : ");
-        String nameP = sc.nextLine();
+        String nameP = Helper.inputString();
         System.out.print("Price : ");
-        double priceP = Double.parseDouble(sc.nextLine());
+        double priceP = Helper.inputPrice();
         System.out.print("Band : ");
-        String bandP = sc.nextLine();
+        String bandP = Helper.inputString();
         return new Phone(id, nameP, priceP, bandP);
     }
     public void readCSV() throws Exception {

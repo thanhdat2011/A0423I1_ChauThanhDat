@@ -1,5 +1,7 @@
 package _03_array_method.exercise;
 
+import _00_Ex_Exam.Helper.Helper;
+
 import java.util.Scanner;
 
 public class e1_deleting_element_in_array {
@@ -27,7 +29,6 @@ public class e1_deleting_element_in_array {
                 index = i;
             }
         }
-
         //
 
         if (!isExist) {

@@ -4,7 +4,6 @@ import _00_Ex_Exam.Helper.Helper;
 import _00_Ex_Exam.Model.Phone;
 import _00_Ex_Exam.Service.PhoneService;
 import _00_Ex_Exam.Service.PhoneServiceImpl;
-import _00_Ex_Exam.Util.Validation;
 
 import java.util.List;
 import java.util.Scanner;
@@ -17,17 +16,19 @@ public class PhoneController {
     }
     public static void displayMenu() {
         do {
-            System.out.println("-----------MENU-----------\n"
-                    + "1. Display Phone List\n"
-                    + "2. Add new Phone\n"
-                    + "3. Delete Phone (by id)\n"
-                    + "4. Delete Phone (by name)\n"
-                    + "5. Find phone (by name) \n"
-                    + "6. Find phone (by price) \n"
-                    + "7. Edit phone (by id)\n"
-                    + "8. Sort (by Price)\n"
-                    + "9. Sort (by id)\n"
-                    + "0. Exit"
+            System.out.print("""
+                    -----------MENU-----------
+                    1. Display Phone List
+                    2. Add new Phone
+                    3. Delete Phone (by id)
+                    4. Delete Phone (by name)
+                    5. Find phone (by name)\s
+                    6. Find phone (by price)\s
+                    7. Edit phone (by id)
+                    8. Sort (by Price)
+                    9. Sort (by id)
+                    0. Exit
+                    """
             );
 
             int choice;
@@ -41,7 +42,7 @@ public class PhoneController {
 
             boolean isDone;
             try {
-                switch (choice) {
+                switch(choice) {
                     case 1:
                         displayP();
                         break;
@@ -141,13 +142,13 @@ public class PhoneController {
         System.out.print("--------------------------\n");
 
         System.out.print("Name : ");
-        String nameP = Helper.input();
+        String nameP = Helper.inputString();
 
         System.out.print("Price : ");
-        double priceP = Double.parseDouble(sc.nextLine());
+        double priceP = Helper.inputPrice();
 
         System.out.print("Band : ");
-        String bandP = Helper.input();
+        String bandP = Helper.inputString();
 
         Phone phone = new Phone(0, nameP, priceP, bandP);
 
@@ -158,7 +159,7 @@ public class PhoneController {
     public static void deleteById() {
         System.out.print("--------------------------\n");
         System.out.print("ID : ");
-        int id = Integer.parseInt(sc.nextLine());
+        int id = Helper.inputId();
 
         if (phoneService.deleteById(id)) {
             System.out.printf("Delete successfully ID %d !!!\n",id);
@@ -169,7 +170,7 @@ public class PhoneController {
     public static void deleteByName(){
         System.out.print("--------------------------\n");
         System.out.print("Name : ");
-        String name = sc.nextLine();
+        String name = Helper.inputString();
 
         if (phoneService.deleteByName(name)) {
             System.out.printf("Delete successfully \"%s\" !!!\n",name);
@@ -180,7 +181,7 @@ public class PhoneController {
     public static void findByName() {
         System.out.print("--------------------------\n");
         System.out.print("Name : ");
-        String name = sc.nextLine();
+        String name = Helper.inputString();
 
         List<Phone> res = phoneService.findByName(name);
         res.forEach(System.out::println);
@@ -188,7 +189,7 @@ public class PhoneController {
     public static void findByPrice() {
         System.out.print("--------------------------\n");
         System.out.print("Price : ");
-        double price = Double.parseDouble(sc.nextLine());
+        double price = Helper.inputPrice();
 
         List<Phone> res = phoneService.findByPrice(price);
         res.forEach(System.out::println);
@@ -196,7 +197,7 @@ public class PhoneController {
     public static void editById() {
         System.out.print("--------------------------\n");
         System.out.print("ID : ");
-        int id = Integer.parseInt(sc.nextLine());
+        int id = Helper.inputId();
 
         phoneService.editById(id);
     }

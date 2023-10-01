@@ -1,0 +1,96 @@
+Chuong trinh Quan Ly Dien Thoai:
+
+- Dien thoai bao gom: id, ten, gia, nha san xuat
+
+- Menu: them moi, hien thi, xoa, tim kiem theo ten
+
+- Chuc nang: 
++ them moi: id tu tang
++ hien thi: danh sach dien thoai
++ xoa: yeu cau nhap id de xoa
++ tim kiem: tim kiem theo ten
+
+- Validate:
++ tat ca cac truong bat buoc nhap
++ gia > 50
+-----
+
+- Chuong trinh Quan Ly Dien Thoai:
+
+- Dien thoai bao gom: id, ten, gia, nha san xuat
+Dien thoai chia thanh 2 loai: 
++ chinh hang: thoi gian bao hanh, ma so bao hanh
++ xach tay: quoc gia, trang thai
+
+- Menu: them moi, hien thi, xoa, tim kiem theo ten
+
+- Chuc nang: 
++ them moi: tuy chon them xach tay hoac chinh hang, id tu tang
++ hien thi: ca 2 loai chinh hang va xach tay
++ xoa: yeu cau nhap id de xoa, neu id ko co thi throw ra NotFoundException va yeu cau nhap lai
++ tim kiem: tim kiem theo ten
+
+- Validate:
++ tat ca cac truong bat buoc nhap
++ gia > 50
++ ten dien thoai phai bat dau bang DT
+
+co chuc nang write file
+===================================
+
+
+- Chuong trinh quan ly ngan hang:
+
+- Tai khoan ngan hang bao gom: id, ten, sdt, birthday, so du, chi nhanh 
+Tai khoan chia thanh 2 loai
++ tai khoan tiet kiem: so tk, status
++ tai khoan tin dung: so the, ma pin 
+
+- Menu: them moi, hien thi, xoa, tim kiem theo ten
+
+- Chuc nang: 
++ them moi: tuy chon tai khoan tiet kiem hay tin dung, id tu tang
++ hien thi: 
++ xoa: yeu cau nhap id de xoa, neu id ko co thi throw ra NotFoundException va yeu cau nhap lai
++ tim kiem: tim kiem theo ten
+
+- Validate:
++ tat ca cac truong bat buoc nhap
++ chi nhanh phai bat dau tu bank
+====================================
+
+
+- Chuong trinh quan ly phuong tien giao thong
+
+- Phuong tien bao gom: id, bien kiem soat, nha san xuat, nam san xuat, chu so huu
+Phuong tien chia lam 3 loai: 
++ o to: so cho, kieu xe
++ xa tai: trong tai (load)
++ xe may: cong suat (wattage)
+
+- Chuc nang: 
++ them moi: tuy chon tai khoan tiet kiem hay tin dung, id tu tang
++ hien thi: 
++ xoa: yeu cau nhap id de xoa, neu id ko co thi throw ra NotFoundException va yeu cau nhap lai
++ tim kiem: tim kiem theo ten
+
+- Validate:
++ tat ca cac truong bat buoc nhap
+====================================
+
+
+- Chuong trinh quan ly sach:
+
+- Sach bao gom: id, ten, tac gia, nam san xuat, gia, mo ta
+Sach chia lam 2 loai:
++ sach giao khoa (text box): color, quantity
++ tieu thuyet (Novel):  quoc gia, status 
+
+- Chuc nang: 
++ them moi: tuy chon tai khoan tiet kiem hay tin dung, id tu tang
++ hien thi: 
++ xoa: yeu cau nhap id de xoa, neu id ko co thi throw ra NotFoundException va yeu cau nhap lai
++ tim kiem: tim kiem theo ten
+
+- Validate:
++ tat ca cac truong bat buoc nhap

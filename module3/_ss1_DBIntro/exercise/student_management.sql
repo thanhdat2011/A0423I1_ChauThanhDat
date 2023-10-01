@@ -62,7 +62,7 @@ alter table students add nothing text;
 alter table students drop nothing;
 
 /* 	How to add 'not null' to field name_student if we dont define before ?  yes
-	If using alter which keyword we use ? 									modify
+	If using alter which keyword we use ? 	modify
 	alter table students modify name_student not null;  */
 alter table teachers
 modify country_teacher varchar(100);

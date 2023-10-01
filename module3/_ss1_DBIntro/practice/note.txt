@@ -1,3 +1,0 @@
-Có thể update thuộc tính của 2 đối tượng thông qua where ... and ... được không ?
-How to add not null to field name_student if we dont define before ?
-If using alter which keyword(set?) we use

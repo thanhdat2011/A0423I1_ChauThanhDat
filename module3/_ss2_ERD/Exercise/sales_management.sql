@@ -13,7 +13,7 @@ create table orders(
 	oID varchar(30),
     oDate date,
     oTotalPrice double,
-    cID varchar(30),
+    cID varchar(30) unique,
     primary key(oID),
     foreign key(cID) references customers(cID)
 );
@@ -26,8 +26,8 @@ create table products(
 );
 
 create table order_detail_product(
-	oID varchar(30),
-    pID varchar(30),
+	oID varchar(30) unique,
+    pID varchar(30) unique,
     odQTY int,
     primary key(oID, pID),
     foreign key(oID) references orders(oID),

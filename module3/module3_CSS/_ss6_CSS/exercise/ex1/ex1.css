@@ -1,0 +1,10 @@
+h1 {
+    color: green;
+    font-family: "Times New Roman",fantasy;
+    font-size: 30px;
+    margin-left: 50px;
+}
+p {
+    border: 2px solid black;
+    padding: 20px;
+}

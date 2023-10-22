@@ -1,0 +1,45 @@
+html {
+    border: 1px solid white;
+    margin: 10px;
+    width: 50%;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 1px;
+}
+
+p {
+    font-size: 15px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+hr {
+    background-color: grey;
+    height: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+span {
+    font-weight: bold;
+}
+#wikipedia {
+    font-size: 10px;
+    margin-top: 1px;
+    text-indent: 0px;
+}
+
+.Nation {
+    color: indigo;
+}

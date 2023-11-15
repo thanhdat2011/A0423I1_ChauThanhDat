@@ -122,7 +122,7 @@ public class UserRepo implements IUserRepo {
 //    }
 
     @Override
-    public List<User> searchByCountry(String country) {
+    public List<User> searchByCountrySP(String country) {
         List<User> users = new ArrayList<>();
         try {
             CallableStatement callableStatement = BaseRepo.getConnectionJavaToDB().prepareCall("call find_all_user_by_country(?)");

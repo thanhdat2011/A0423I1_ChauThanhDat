@@ -24,9 +24,6 @@
 <body>
 <h1>User Manager</h1>
 
-<%--<div class="btn-group" role="group" aria-label="Basic example">--%>
-<%--    <button type="button" class="btn btn-primary"><a href="/users?action=create">Add new user</a></button>--%>
-<%--</div>--%>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -101,7 +98,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                    <button type="submit" class="btn btn-primary">Delete</button>
                                 </div>
                             </div>
                         </div>

@@ -16,7 +16,7 @@ public interface IUserRepo {
 
     void deleteUserById(int id);
 
-    List<User> searchByCountry(String country);
+    List<User> searchByCountrySP(String country);
 
     User getUserByIdSP(int id);
 

@@ -126,7 +126,7 @@ public class userServlet extends HttpServlet {
 
     private void doSearch(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String country = req.getParameter("country");
-        List<User> users = userService.searchByCountry(country);
+        List<User> users = userService.searchByCountrySP(country);
         req.setAttribute("users", users);
         req.getRequestDispatcher("/users/search.jsp").forward(req,resp);
     }

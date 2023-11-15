@@ -16,7 +16,7 @@ public interface IUserService {
 
     void delete(int id);
 
-    List<User> searchByCountry(String country);
+    List<User> searchByCountrySP(String country);
 
     User getUserByIdSP(int id);
     void insertUserSP(User user);

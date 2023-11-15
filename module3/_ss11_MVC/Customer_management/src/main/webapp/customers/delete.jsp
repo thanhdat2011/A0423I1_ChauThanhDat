@@ -12,8 +12,8 @@
 </head>
 <body>
 <h1>Delete</h1>
-
-<form method="post" action="/customers?action=delete">
+<%-- niu ko co action thi se tro vao` URL hien tai --%>
+<form method="post">
     <table>
         <tr>
             <td>Name :</td>

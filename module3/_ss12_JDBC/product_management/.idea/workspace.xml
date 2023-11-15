@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acdabd8b-2221-4261-92e3-d4935032138c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/webapp/customers/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/java/com/example/customer_management/controllers/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/java/com/example/customer_management/controllers/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/webapp/customers/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/webapp/customers/delete.jsp" afterDir="false" />
+    <list default="true" id="5261a41a-556e-4836-b4c1-e22fe918e425" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/product_management/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/product_management/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/product_management/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/product_management/repositories/IProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/product_management/repositories/ProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/product_management/services/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/product_management/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/products/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,23 +37,6 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="customer_exercise" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -52,7 +47,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -61,7 +56,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectId" id="2XZqAlHCtmewGkAqyC2ljKlgjml" />
+  <component name="ProjectId" id="2Xtb9f7nKomgqOssx42gNsVCCyw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -70,9 +65,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/PC/Desktop/module3_demo/_ss11_MVC/jwbd-customer-management-develop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,23 +73,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CodeGym\module3\_ss9_web\customer_exercise\src\main\webapp\customers" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
-        <artifact name="Gradle : com.example : customer_exercise-1.0-SNAPSHOT.war">
+        <artifact name="Gradle : com.example : product_management-1.0-SNAPSHOT.war">
           <settings>
             <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="f946726c-0adf-440a-97fc-b482943e8702" />
+        <option name="BASE_DIRECTORY_NAME" value="d17f5856-84df-4644-b6c6-48dacab1dae9" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -104,7 +92,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50358" />
+        <option name="DEBUG_PORT" value="52057" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -169,7 +157,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : com.example : customer_exercise-1.0-SNAPSHOT.war" />
+          <artifact name="Gradle : com.example : product_management-1.0-SNAPSHOT.war" />
         </option>
       </method>
     </configuration>
@@ -177,39 +165,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="acdabd8b-2221-4261-92e3-d4935032138c" name="Changes" comment="" />
-      <created>1698846809662</created>
+      <changelist id="5261a41a-556e-4836-b4c1-e22fe918e425" name="Changes" comment="" />
+      <created>1699451174253</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698846809662</updated>
-      <workItem from="1698846810720" duration="2025000" />
-      <workItem from="1698860601063" duration="927000" />
-      <workItem from="1698888605828" duration="615000" />
-      <workItem from="1698990074163" duration="734000" />
-      <workItem from="1698995047063" duration="3227000" />
-      <workItem from="1698998285238" duration="18000" />
-      <workItem from="1698998311003" duration="365000" />
-      <workItem from="1699002139077" duration="16000" />
-      <workItem from="1699273820407" duration="669000" />
+      <updated>1699451174253</updated>
+      <workItem from="1699451175251" duration="2398000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/customer_exercise/repositories/ICustomerRepo.java</url>
-          <line>7</line>
-          <properties class="com.example.customer_exercise.repositories.ICustomerRepo" method="findAll">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

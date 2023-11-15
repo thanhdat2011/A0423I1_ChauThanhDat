@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bc95621-56a9-4645-8c5c-74964545af0c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customers/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customers/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss12_JDBC/user_manager_DB.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss10_jstl/customer_exercise/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss10_jstl/customer_exercise/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss10_jstl/customer_exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss10_jstl/customer_exercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/customer_management/controllers/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/customer_management/controllers/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/customer_management/repositories/ICustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/customer_management/repositories/ICustomerRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/customer_management/repositories/impl/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/customer_management/repositories/impl/CustomerRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/customer_management/services/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/customer_management/services/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/customer_management/services/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/customer_management/services/impl/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/customers/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customers/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudyDatabase/Furama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudyDatabase/Furama.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +31,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Customer_management" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,19 +75,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/module3/_ss11_MVC/Customer_management&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
@@ -155,6 +187,12 @@
       <option name="presentableId" value="Default" />
       <updated>1699008635131</updated>
       <workItem from="1699008636150" duration="11746000" />
+      <workItem from="1699020805747" duration="856000" />
+      <workItem from="1699061736031" duration="15000" />
+      <workItem from="1699262563747" duration="38000" />
+      <workItem from="1699274541151" duration="5925000" />
+      <workItem from="1699443457077" duration="5212000" />
+      <workItem from="1699501987586" duration="1009000" />
     </task>
     <servers />
   </component>

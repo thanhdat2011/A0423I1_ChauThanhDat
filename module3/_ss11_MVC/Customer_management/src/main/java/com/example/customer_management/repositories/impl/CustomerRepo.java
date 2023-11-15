@@ -38,4 +38,9 @@ public class CustomerRepo implements ICustomerRepo {
     public void remove(int id) {
         customers.remove(id);
     }
+
+    @Override
+    public void update(int id, Customer customer) {
+        customers.put(id, customer);
+    }
 }

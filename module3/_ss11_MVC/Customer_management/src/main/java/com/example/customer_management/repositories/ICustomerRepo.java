@@ -12,4 +12,6 @@ public interface ICustomerRepo {
     Customer findById(int id);
 
     void remove(int id);
+
+    void update(int id, Customer customer);
 }

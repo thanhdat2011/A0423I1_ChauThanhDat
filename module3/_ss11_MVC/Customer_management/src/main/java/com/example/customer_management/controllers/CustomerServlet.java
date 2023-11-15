@@ -30,15 +30,31 @@ public class CustomerServlet extends HttpServlet {
                 showCreateForm(req, resp);
                 break;
             case "edit":
-//                updateCustomer(request, response);
+                showUpdateForm(req, resp);
                 break;
             case "delete":
                 showDeleteForm(req, resp);
                 break;
+            case "view":
+                showViewForm(req, resp);
             default:
                 listCustomers(req, resp);
                 break;
         }
+    }
+
+    private void showViewForm(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        int id = Integer.parseInt(req.getParameter("id"));
+        Customer customer = customerService.findById(id);
+        req.setAttribute("customer", customer);
+        req.getRequestDispatcher("customers/view.jsp").forward(req,resp);
+    }
+
+    private void showUpdateForm(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        int id = Integer.parseInt(req.getParameter("id"));
+        Customer customer = customerService.findById(id);
+        req.setAttribute("customer", customer);
+        req.getRequestDispatcher("customers/edit.jsp").forward(req,resp);
     }
 
 
@@ -78,7 +94,7 @@ public class CustomerServlet extends HttpServlet {
                 createCustomer(req, resp);
                 break;
             case "edit":
-//                updateCustomer(request, response);
+                updateCustomer(req, resp);
                 break;
             case "delete":
                 deleteCustomer(req, resp);
@@ -88,9 +104,30 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
+    private void updateCustomer(HttpServletRequest req, HttpServletResponse resp) {
+        String name = req.getParameter("name");
+        String email = req.getParameter("email");
+        String address = req.getParameter("address");
+        int id = Integer.parseInt((req.getParameter("id")));
+        Customer customer = customerService.findById(id);
+        customer.setName(name);
+        customer.setEmail(email);
+        customer.setAddress(address);
+        customerService.update(id, customer);
+        req.setAttribute("customer", customer);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("customers/edit.jsp");
+        req.setAttribute("message", "Customer was updated !!!");
+        try {
+            dispatcher.forward(req, resp);
+
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
     private void deleteCustomer(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         int id = Integer.parseInt(req.getParameter("id"));
-//        Customer customer = customerService.findById(id);
         customerService.remove(id);
         resp.sendRedirect("/customers");
     }
@@ -103,13 +140,16 @@ public class CustomerServlet extends HttpServlet {
 
         Customer customer = new Customer(id, name, email, address);
         customerService.save(customer);
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("customers/create.jsp");
         req.setAttribute("message", "New customer was created !!!");
         try {
             dispatcher.forward(req, resp);
+
         } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
+        /* lúc ni là nó getRequestDispatcher ròi nên là dòng dưới ni ko chạy */
 //        resp.sendRedirect("/customers");
     }
     /* ================================================================================================== */

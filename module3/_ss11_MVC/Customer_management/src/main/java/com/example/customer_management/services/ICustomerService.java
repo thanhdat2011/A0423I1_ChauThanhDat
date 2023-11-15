@@ -13,4 +13,5 @@ public interface ICustomerService {
 
     void remove(int id);
 
+    void update(int id, Customer customer);
 }

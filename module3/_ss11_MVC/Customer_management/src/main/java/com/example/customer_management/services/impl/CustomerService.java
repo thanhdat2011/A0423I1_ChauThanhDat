@@ -28,4 +28,9 @@ public class CustomerService implements ICustomerService {
     public void remove(int id) {
         repo.remove(id);
     }
+
+    @Override
+    public void update(int id, Customer customer) {
+        repo.update(id, customer);
+    }
 }

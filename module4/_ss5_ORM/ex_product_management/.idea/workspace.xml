@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ae6c943-b5b3-484e-b6f5-5fc35b6504bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../module2/src/_00_Ex_Exam/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module2/src/_00_Ex_Exam/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module2/src/_00_Ex_Exam/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module2/src/_00_Ex_Exam/_00_Ex_Exam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module2/src/_20_PhoneManagement/_20_PhoneManagement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ex_product_management/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ex_product_management/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_spring/.idea/modules/demo_spring.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/controllers/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/controllers/BookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/ILibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/ILibraryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/BaseRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/BaseRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/LibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/LibraryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/ILibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/ILibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/Impl/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/Impl/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/bookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/bookList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/studentList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss2_Spring_Controller/ex2_caculator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss2_Spring_Controller/ex2_caculator/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss2_Spring_Controller/ex2_caculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss2_Spring_Controller/ex2_caculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ex_product_management" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2aXDtOF0VdmWMSXut7xwEIs7hOI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/module3/FE_module3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;dcb098241f18b9ca36bc484c70744485&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\module4\_ss5_ORM\ex_product_management\src\main\java\com\example\ex_product_management\config" />
+      <recent name="D:\CodeGym\module4\_ss4_thymeleaf\ex_product_management\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : ex_product_management-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="3a0f6d5e-45a4-42a0-8094-794d17d0e316" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52783" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : ex_product_management-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ae6c943-b5b3-484e-b6f5-5fc35b6504bb" name="Changes" comment="" />
+      <created>1704456247409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704456247409</updated>
+      <workItem from="1704456248402" duration="8318000" />
+      <workItem from="1704512650305" duration="1793000" />
+      <workItem from="1704705930893" duration="1660000" />
+      <workItem from="1704716839071" duration="7248000" />
+      <workItem from="1704884580628" duration="5250000" />
+      <workItem from="1704893668407" duration="2642000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ex_product_management/service/IProductService.java</url>
+          <line>7</line>
+          <properties class="com.example.ex_product_management.service.IProductService" method="findAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ex_product_management/repository/ProductRepositoryImpl.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ex_product_management/repository/ProductRepositoryImpl.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ex_product_management/controller/ProductController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -27,10 +27,10 @@ public class ProductRepositoryImpl implements IProductRepository{
     @Override
     @Transactional
     public void save(Product product) {
-        if (findProductById(product.getId()) == null) {
-            entityManager.persist(product);
-        } else {
+        if (entityManager.contains(product) || product.getId() != 0) {
             entityManager.merge(product);
+        } else {
+            entityManager.persist(product);
         }
 
     }

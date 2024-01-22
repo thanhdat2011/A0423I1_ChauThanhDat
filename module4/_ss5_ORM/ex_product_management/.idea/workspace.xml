@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ae6c943-b5b3-484e-b6f5-5fc35b6504bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../module2/src/_00_Ex_Exam/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module2/src/_00_Ex_Exam/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module2/src/_00_Ex_Exam/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module2/src/_00_Ex_Exam/_00_Ex_Exam.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module2/src/_20_PhoneManagement/_20_PhoneManagement.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ex_product_management/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ex_product_management/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo_spring/.idea/modules/demo_spring.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/demo/SpringBoot/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/demo/SpringBoot/src/main/resources/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/ex1_blog/src/main/resources/templates/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/out/production/module2/test/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/_Final_Exam/Repository/ExProductRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_Final_Exam/Repository/ExProductRepoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module2/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" afterDir="false" />
@@ -36,10 +33,9 @@
       <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss2_Spring_Controller/ex2_caculator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss2_Spring_Controller/ex2_caculator/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss2_Spring_Controller/ex2_caculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss2_Spring_Controller/ex2_caculator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss3_FormBinding/ex1_mail_config/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss3_FormBinding/ex1_mail_config/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss3_FormBinding/ex1_mail_config/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss3_FormBinding/ex1_mail_config/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/module3/FE_module3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/module4/_ss5_ORM/ex_product_management&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -222,6 +218,9 @@
       <workItem from="1704716839071" duration="7248000" />
       <workItem from="1704884580628" duration="5250000" />
       <workItem from="1704893668407" duration="2642000" />
+      <workItem from="1705052908820" duration="2128000" />
+      <workItem from="1705319898439" duration="1883000" />
+      <workItem from="1705328159443" duration="26000" />
     </task>
     <servers />
   </component>

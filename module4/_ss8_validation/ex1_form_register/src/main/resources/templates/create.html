@@ -7,13 +7,15 @@
 <body>
 
 <form th:action="@{/add}" method="post" th:object="${user}">
+
     First Name : <input type="text" th:field="*{firstName}">
     <p th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></p>
     Last Name : <input type="text" th:field="*{lastName}">
     <p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></p>
     Phone : <input type="text" th:field="*{phone}">
     <p th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></p>
-    DOB : <input type="date" th:field="*{dob}">
+    DOB : <input required type="date" th:field="*{dob}">
+    <p th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}"></p>
     Mail : <input type="text" th:field="*{email}">
     <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
     <input type="submit" value="Add">

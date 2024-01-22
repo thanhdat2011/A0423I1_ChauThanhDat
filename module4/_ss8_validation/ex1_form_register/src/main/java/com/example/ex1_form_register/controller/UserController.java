@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.time.LocalDate;
+
 @RequestMapping("")
 @Controller
 public class UserController {
@@ -26,7 +28,7 @@ public class UserController {
 
     @GetMapping("/show-create-form")
     public ModelAndView showAddForm(){
-        return new ModelAndView("create","user", new UserDTO());
+        return new ModelAndView("create","user", new UserDTO(LocalDate.now()));
     }
 
     @PostMapping("/add")

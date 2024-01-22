@@ -3,10 +3,12 @@ package com.example.ex1_form_register.model;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class UserDTO implements Validator {
 //    Firstname, lastname bắt buộc, có độ dài tối thiểu 5, tối đa 45 ký tự
@@ -26,11 +28,14 @@ public class UserDTO implements Validator {
     @Size(min = 5, message = "> 5 character")
     @Size(max = 45, message = "< 45 character")
     private String lastName;
-    @Pattern(regexp = "^(090|091|[(]84[)][+]90|[(]84[)][+]91)[\\\\d]{7}$")
+//    @Pattern(regexp = "^(090|091|[(]84[)][+]90|[(]84[)][+]91)[\\\\d]{7}$")
+    @Pattern(regexp = "^[0-9]{10}$")
     private String phone;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dob;
 
-    @Pattern(regexp = "^[\\\\w.]+@[a-zA-Z0-9]+(\\\\.[a-zA-Z0-9]+){1,2}$")
+    @Pattern(regexp = "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$", message = "example : ctd@gmail.com")
     private String email;
 
     public UserDTO() {
@@ -43,6 +48,10 @@ public class UserDTO implements Validator {
         this.phone = phone;
         this.dob = dob;
         this.email = email;
+    }
+
+    public UserDTO(LocalDate dob) {
+        this.dob = dob;
     }
 
     public Long getId() {
@@ -100,7 +109,11 @@ public class UserDTO implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        UserDTO userDTO = new UserDTO();
+        UserDTO userDTO = (UserDTO) target;
         LocalDate dob =userDTO.getDob();
+        int age = Period.between(dob, LocalDate.now()).getYears();
+        if (age < 18) {
+            errors.rejectValue("dob", "","You must be > 18 years old !!!");
+        }
     }
 }

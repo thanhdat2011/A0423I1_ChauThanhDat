@@ -1,0 +1,10 @@
+●	Joinpoint: là một điểm trong chương trình, là những nơi có thể được chèn những cross-cutting concern. Chẳng hạn chúng ta cần ghi log lại sau khi chạy method nào đó thì vị trí ngay sau method đó được thực thi gọi là một Jointpoint. Một Jointpoint có thể là một phương thức được gọi, một ngoại lệ được throw ra, hay một field được thay đổi.
+●	Pointcut: có nhiều cách để xác định Joinpoint, những cách như thế được gọi là Pointcut. Nó là các biểu thức được sử dụng để kiểm tra nó có khớp với các Jointpoint để xác định xem Advice có cần được thực hiện hay không.
+●	Advice: những xử lý phụ (crosscutting concern) được thêm vào xử lý chính (core concern), code để thực hiện các xử lý đó được gọi Advice. Advice được chia thành các loại sau:
+•	Before: chạy trước khi joinpoint chạy
+•	After: sau
+•	Afterunning: chạy sau khi joinpoint thực thi thành công
+•	Around: chạy trước và sau joinpoint
+•	AfterThrowing: sẽ thực thi khi method/ joinpoint được kết thúc = 1 exception
+Target Object : là những đối tượng mà advice được áp dụng
+Weave(đan, dệt): Tiến trình cài đặt các advice vào mã nghiệp vụ chính.

@@ -13,6 +13,5 @@ public class UploadFileService {
         String folderUpload = "D:\\CodeGym\\module4\\_ss3_FormBinding\\prac3_upload_file\\src\\main\\webapp\\WEB-INF\\img\\";
         String fileName = file.getOriginalFilename();
         FileCopyUtils.copy(file.getBytes(), new File(folderUpload + fileName));
-
     }
 }

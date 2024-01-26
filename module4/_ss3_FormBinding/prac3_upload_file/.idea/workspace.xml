@@ -5,25 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b53a76c3-7218-4ef6-8298-abf4a9c467ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prac3_upload_file/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prac3_upload_file/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prac3_upload_file/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prac3_upload_file/controller/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prac3_upload_file/model/Upload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prac3_upload_file/service/UploadFileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss5_ORM/ex2_picture/src/main/java/com/example/ex2_picture/controller/PictureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss5_ORM/ex2_picture/src/main/resources/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/out/production/module2/test/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/_Final_Exam/Repository/ExProductRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_Final_Exam/Repository/ExProductRepoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/controllers/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/controllers/BookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/ILibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/ILibraryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/BaseRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/BaseRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/LibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/LibraryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/ILibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/ILibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/Impl/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/Impl/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/bookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/bookList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/studentList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prac3_upload_file/service/UploadFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prac3_upload_file/service/UploadFileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +46,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prac3_upload_file" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -45,7 +73,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -65,7 +93,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/CodeGym/module4/_ss3_FormBinding/prac3_upload_file/src/main/webapp/WEB-INF/views",
+    "last_opened_file_path": "D:/CodeGym/module4/_ss5_ORM/demo/SpringMVC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,6 +101,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "abaf62fbce9fb0abdac88a66001c9ec3",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -180,6 +209,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704886893454</updated>
       <workItem from="1704886894468" duration="5015000" />
+      <workItem from="1705921358311" duration="912000" />
     </task>
     <servers />
   </component>

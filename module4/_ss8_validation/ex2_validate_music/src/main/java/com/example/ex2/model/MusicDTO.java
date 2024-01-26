@@ -7,10 +7,17 @@ import jakarta.validation.constraints.Size;
 public class MusicDTO{
     private Long id;
     @NotBlank
-    @Size(max = 10)
+    @Size(max = 800)
     @Pattern(regexp = "^[A-Za-z0-9 ]*$")
     private String name;
+
+    @NotBlank
+    @Size(max = 300)
+    @Pattern(regexp = "^[A-Za-z0-9 ]*$")
     private String singer;
+    @NotBlank
+    @Size(max = 1000)
+    @Pattern(regexp = "^[A-Za-z0-9 ,]*$")
     private String type;
 
     public MusicDTO() {

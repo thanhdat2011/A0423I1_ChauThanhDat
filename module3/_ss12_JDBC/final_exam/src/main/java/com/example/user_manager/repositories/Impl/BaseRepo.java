@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class BaseRepo {
-    private static final String jdbcURL = "jdbc:mysql://localhost:3306/library";
+    private static final String jdbcURL = "jdbc:mysql://localhost:3306/user_manager";
     private static final String username = "root";
     private static final String password = "20112000";
     private static Connection connection;

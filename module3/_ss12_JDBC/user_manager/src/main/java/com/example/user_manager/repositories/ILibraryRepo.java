@@ -1,14 +1,25 @@
 package com.example.user_manager.repositories;
 
 import com.example.user_manager.models.Book;
+import com.example.user_manager.models.Student;
 
 import java.util.List;
 
-public interface IBookRepo {
+public interface ILibraryRepo {
 
-    List<Book> findAll();
+    List<Book> findAllBook();
 
-    Book findById(String bookID);
+    Book findBookById(String bookID);
+
+    void addStudent(Student student);
+
+    Student findStudentByName(String studentName);
+
+    List<Student> findAllStudent();
+
+    List<Student> findStudentForOption();
+
+
 
 //    Student findById(int id);
 //

@@ -10,7 +10,6 @@
 <html>
 <head>
     <title>Title</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         h1,h2 {
@@ -24,7 +23,7 @@
 </head>
 <body>
 
-<h1>Library</h1>
+<h1>User Manager</h1>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,17 +37,16 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/books">Home</a>
+                    <a class="nav-link" href="/users">Home</a>
                 </li>
-
-<%--                <li class="nav-item">--%>
-<%--                    <a class="nav-link" href="/books?action=create">Add User</a>--%>
-<%--                </li>--%>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/books?action=studentList">Rent List</a>
+                    <a class="nav-link" href="/users?action=create">Add User</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="/users?action=sort" tabindex="-1" aria-disabled="true">Sort</a>
+                </li>
             </ul>
 
             <form class="d-flex" action="/users?action=search" method="post">
@@ -62,82 +60,54 @@
 
 
 
-<h2><a href="/books"></a>List all book</h2>
-
+<h2><a href="/users"></a>List all user</h2>
 <table class="table table-hover">
     <thead>
     <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Author</th>
-            <th>Amount</th>
-            <th>Description</th>
+            <th>Email</th>
+            <th>Country</th>
             <th>Action</th>
     </tr>
     </thead>
     <tbody>
-    <c:forEach var="book" items="${books}">
+    <c:forEach var="user" items="${users}">
         <tr>
-            <td>${book.id}</td>
-            <td>${book.name}</td>
-            <td>${book.author}</td>
-            <td>${book.amount}</td>
-            <td>${book.description}</td>
+            <td>${user.id}</td>
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.country}</td>
             <td>
-<%--            <button type="button" class="btn btn-danger"><a href="/books?action=create&id=${book.id}">Rent</a></button>--%>
+                <button type="button" class="btn btn-danger"><a href="/users?action=edit&id=${user.id}">edit</a></button>
 
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                        data-bs-target="#rent${book.id}">
-                    Rent
+                        data-bs-target="#delete${user.id}">
+                    Delete
                 </button>
 
-                <c:if test="${book.amount < 1}">
-
-<%--                <form action="/books?action=create&id=${book.id}" method="post">--%>
-                    <div class="modal" id="rent${book.id}" tabindex="-1">
+                <form action="/users?action=delete&id=${user.id}" method="post">
+                    <div class="modal" id="delete${user.id}" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Notice !!!</h5>
+                                    <h5 class="modal-title">Delete</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Book '${book.name}' is run out.</p>
+                                    <p>You want to delete user ${user.name}.</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-<%--                                    <button type="submit" class="btn btn-primary">Delete</button>--%>
+                                    <button type="submit" class="btn btn-primary">Delete</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-<%--                </form>--%>
+                </form>
 
-                </c:if>
 
-                <c:if test="${book.amount > 0}">
 
-<%--                    <form action="/books?action=create&id=${book.id}" method="get">--%>
-                        <div class="modal" id="rent${book.id}" tabindex="-1">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Rent</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Rent '${book.name}' ?</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary"><a href="/books?action=create&id=${book.id}">Rent</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-<%--                    </form>--%>
-
-                </c:if>
             </td>
         </tr>
     </c:forEach>
@@ -147,5 +117,4 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 </html>

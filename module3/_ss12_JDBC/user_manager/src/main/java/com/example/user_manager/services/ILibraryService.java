@@ -5,25 +5,19 @@ import com.example.user_manager.models.Student;
 
 import java.util.List;
 
-public interface IBookService {
+public interface ILibraryService {
 
-    List<Book> getAll();
+    List<Book> getAllBook();
 
-    Book findById(String bookID);
+    Book findBookById(String bookID);
 
-//    void add(Student student);
+    void addStudent(Student student);
+
+    Student findStudentByName(String studentName);
+
+    List<Student> getAllStudent();
 
 
-//    Book findById(int id);
-//
-//    void add(Book book);
-//
-//    void update(Book user);
-//
-//    void delete(int id);
-//
-//    List<Book> searchByCountrySP(String country);
-//
-//    Book getUserByIdSP(int id);
-//    void insertUserSP(Book book);
+    List<Student> getStudentForOption();
+
 }

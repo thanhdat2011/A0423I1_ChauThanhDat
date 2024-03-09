@@ -20,7 +20,7 @@ values	('Minh','minh@codegym.vn','Viet Nam'),
 		('Kante','kante@che.uk','Kenia');
         
         
-DELIMITER //
+DELIMITER //studentproduct
 create procedure get_user_by_id(in user_id int)
 begin
 	select user_name, user_email, user_country 
@@ -43,7 +43,6 @@ delimiter ;
  delimiter //
  create procedure find_all_user_by_country(in country varchar(50))
  begin
-	-- set country = country;
 	select * from users where user_country like concat('%',country,'%');
  end//
  delimiter ;

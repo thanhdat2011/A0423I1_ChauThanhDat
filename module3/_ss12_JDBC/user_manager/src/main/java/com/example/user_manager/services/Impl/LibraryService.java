@@ -2,63 +2,43 @@ package com.example.user_manager.services.Impl;
 
 import com.example.user_manager.models.Book;
 import com.example.user_manager.models.Student;
-import com.example.user_manager.repositories.IBookRepo;
-import com.example.user_manager.repositories.Impl.BookRepo;
-import com.example.user_manager.services.IBookService;
+import com.example.user_manager.repositories.ILibraryRepo;
+import com.example.user_manager.repositories.Impl.LibraryRepo;
+import com.example.user_manager.services.ILibraryService;
 
 import java.util.List;
 
-public class BookService implements IBookService {
-    IBookRepo bookRepo = new BookRepo();
+public class LibraryService implements ILibraryService {
+    ILibraryRepo libraryRepo = new LibraryRepo();
     @Override
-    public List<Book> getAll() {
-        return bookRepo.findAll();
+    public List<Book> getAllBook() {
+        return libraryRepo.findAllBook();
     }
 
     @Override
-    public Book findById(String bookID) {
-        return bookRepo.findById(bookID);
+    public Book findBookById(String bookID) {
+        return libraryRepo.findBookById(bookID);
     }
 
-//    @Override
-//    public void add(Student student) {
-//        return bookRepo.save(student);
-//    }
+    @Override
+    public void addStudent(Student student) {
+        libraryRepo.addStudent(student);
+    }
 
-//    @Override
-//    public Book findById(int id) {
-//        return userRepo.findById(id);
-//    }
-//
-//    @Override
-//    public void add(Book user) {
-//        userRepo.save(user);
-//    }
-//
-//    @Override
-//    public void update(Book user) {
-//        userRepo.update(user);
-//    }
-//
-//    @Override
-//    public void delete(int id) {
-//        userRepo.deleteUserById(id);
-//    }
-//
-//    @Override
-//    public List<Book> searchByCountrySP(String country) {
-//        return userRepo.searchByCountrySP(country);
-//    }
-//
-//    @Override
-//    public Book getUserByIdSP(int id) {
-//        return userRepo.getUserByIdSP(id);
-//    }
-//
-//    @Override
-//    public void insertUserSP(Student user) {
-//        userRepo.insertUserSP(user);
-//    }
+    @Override
+    public Student findStudentByName(String studentName) {
+        return libraryRepo.findStudentByName(studentName);
+    }
+
+    @Override
+    public List<Student> getAllStudent() {
+        return libraryRepo.findAllStudent();
+    }
+
+    @Override
+    public List<Student> getStudentForOption() {
+        return libraryRepo.findStudentForOption();
+    }
 
 
 }

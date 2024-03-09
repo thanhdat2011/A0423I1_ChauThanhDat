@@ -2,8 +2,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: PC
-  Date: 11/26/2023
-  Time: 12:50 AM
+  Date: 11/13/2023
+  Time: 8:51 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,19 +11,10 @@
 <head>
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        h1,h2 {
-            text-align: center;
-        }
-        a{
-            color: white;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
 
-<h1>Library</h1>
+<h1 style="text-align: center">User Manager</h1>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -36,17 +27,16 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/books">Home</a>
+                    <a class="nav-link" href="/users">Home</a>
                 </li>
-
-<%--                <li class="nav-item">--%>
-<%--                    <a class="nav-link" href="/books?action=create">Add User</a>--%>
-<%--                </li>--%>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/books?action=studentList">Rent List</a>
+                    <a class="nav-link" href="/users?action=create">Add User</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="/users?action=sort" tabindex="-1" aria-disabled="true">Sort</a>
+                </li>
             </ul>
 
             <form class="d-flex" action="/users?action=search" method="post">
@@ -58,29 +48,24 @@
     </div>
 </nav>
 
-<h2><a href="/books"></a>Rent list</h2>
+<h2 style="text-align: center">Search By Country</h2>
+
 <table class="table table-hover">
     <thead>
     <tr>
-        <th>Card Id</th>
-        <th>Book Name</th>
-        <th>Book Author</th>
-        <th>Student Name</th>
-        <th>Student Class</th>
-        <th>Rent Date</th>
-        <th>Return Date</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Country</th>
     </tr>
     </thead>
     <tbody>
-    <c:forEach var="student" items="${students}">
+    <c:forEach var="user" items="${users}">
         <tr>
-            <td>${student.bookId}</td>
-            <td>${student.bookName}</td>
-            <td>${student.bookAuthor}</td>
-            <td>${student.studentName}</td>
-            <td>${student.studentClass}</td>
-            <td>${student.rentDate}</td>
-            <td>${student.returnDate}</td>
+            <td>${user.id}</td>
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.country}</td>
         </tr>
     </c:forEach>
     </tbody>
@@ -89,5 +74,4 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 </html>

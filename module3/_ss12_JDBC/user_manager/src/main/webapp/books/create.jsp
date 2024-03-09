@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: PC
@@ -28,9 +29,9 @@
     <h1 style="text-align: center">Rent Book</h1>
 
     <div class="row mb-3">
-        <label for="inputCardCode" class="col-sm-2 col-form-label">Book Code</label>
+        <label for="inputCardId" class="col-sm-2 col-form-label">Book Id</label>
         <div class="col-sm-10">
-            <input type="text" pattern="^MS-[0-9]{4}$" title="Must start with MS- and follow by 4 digits" class="form-control is-invalid" name="cardID" id="inputCardCode" required>
+            <input type="text"  title="Must start with MS- and follow by 4 digits" class="form-control" name="BookId" id="inputCardId" required>
         </div>
     </div>
 
@@ -44,19 +45,24 @@
     <div class="row mb-3">
         <label for="inputStudentName" class="col-sm-2 col-form-label">Student Name</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control is-invalid" name="studentName" id="inputStudentName" required>
+<%--            <input type="text" class="form-control" name="studentName" id="inputStudentName" required>--%>
+            <select name="studentName" class="form-control" id="inputStudentName">
+                <c:forEach var="student" items="${students}">
+                    <option value="${student.studentName}">${student.studentName}</option>
+                </c:forEach>
+            </select>
         </div>
     </div>
 
     <div class="row mb-3">
         <label for="inputStudentName" class="col-sm-2 col-form-label">Rent Date</label>
         <div class="col-sm-10">
-            <input type="date" class="form-control" name="rentDate" id="inputRentDate" >
+            <input type="date" class="form-control" disabled name="rentDate" id="inputRentDate" value="${rentDate}" >
         </div>
     </div>
 
     <div class="row mb-3">
-        <label for="inputReturnDate" class="col-sm-2 col-form-label">Rent Date</label>
+        <label for="inputReturnDate" class="col-sm-2 col-form-label">Return Date</label>
         <div class="col-sm-10">
             <input type="date" class="form-control" name="returnDate" id="inputReturnDate" >
         </div>

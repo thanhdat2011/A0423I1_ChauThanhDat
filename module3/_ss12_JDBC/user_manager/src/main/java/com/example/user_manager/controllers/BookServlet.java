@@ -2,10 +2,8 @@ package com.example.user_manager.controllers;
 
 import com.example.user_manager.models.Book;
 import com.example.user_manager.models.Student;
-import com.example.user_manager.services.IBookService;
-import com.example.user_manager.services.IStudentService;
-import com.example.user_manager.services.Impl.BookService;
-import com.example.user_manager.services.Impl.StudentService;
+import com.example.user_manager.services.ILibraryService;
+import com.example.user_manager.services.Impl.LibraryService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,13 +11,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 
-@WebServlet(urlPatterns = "/users", name = "userServlet")
-public class userServlet extends HttpServlet {
+@WebServlet(urlPatterns = "/books", name = "BookServlet")
+public class BookServlet extends HttpServlet {
 
-    private static final IBookService bookService = new BookService();
-    private static final IStudentService studentService = new StudentService();
+    private static final ILibraryService libraryService = new LibraryService();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
@@ -31,7 +32,10 @@ public class userServlet extends HttpServlet {
                 showCreateForm(req,resp);
                 break;
             case "edit":
-//                showEditForm(req,resp);
+                showEditForm(req,resp);
+                break;
+            case "studentList":
+                listStudent(req,resp);
                 break;
             default:
                 listBook(req,resp);
@@ -39,26 +43,37 @@ public class userServlet extends HttpServlet {
         }
     }
 
+    private void listStudent(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        List<Student> students = libraryService.getAllStudent();
+        req.setAttribute("students", students);
+        req.getRequestDispatcher("/books/studentList.jsp").forward(req,resp);
+    }
 
-//    private void showEditForm(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        int id = Integer.parseInt(req.getParameter("id"));
-//        Student user = bookService.findById(id);
-//        req.setAttribute("user",user);
-//        req.getRequestDispatcher("users/edit.jsp").forward(req,resp);
-//
-//    }
+
+    private void showEditForm(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+
+    }
 
     private void showCreateForm(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String bookID = req.getParameter(req.getParameter("id"));
-        Book book = bookService.findById(bookID);
+        String bookID = req.getParameter("id");
+        Book book = libraryService.findBookById(bookID);
         req.setAttribute("bookName", book.getName());
-        req.getRequestDispatcher("users/create.jsp").forward(req,resp);
+        List<Student> students = libraryService.getStudentForOption();
+        req.setAttribute("students", students);
+
+        LocalDate rentDate = LocalDate.now();
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+//        String rentDate = dateObj.format(formatter);
+
+        req.setAttribute("rentDate", rentDate);
+        req.getRequestDispatcher("/books/create.jsp").forward(req,resp);
     }
 
     private void listBook(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Book> books = bookService.getAll();
+        List<Book> books = libraryService.getAllBook();
         req.setAttribute("books", books);
-        req.getRequestDispatcher("/users/list.jsp").forward(req,resp);
+        req.getRequestDispatcher("/books/bookList.jsp").forward(req,resp);
     }
 
 
@@ -85,33 +100,31 @@ public class userServlet extends HttpServlet {
         }
     }
 
-//    private void deleteUser(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-//        int id = Integer.parseInt(req.getParameter("id"));
-//        bookService.delete(id);
-//        resp.sendRedirect("/users");
-//    }
+     private void deleteUser(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+
+     }
 
     private void doEdit(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-//        int id = Integer.parseInt(req.getParameter("id"));
-//        String name = req.getParameter("name");
-//        String email = req.getParameter("email");
-//        String country = req.getParameter("country");
-//
-//        Student user = new Student(id,name,email,country);
-//        userService.update(user);
-//        resp.sendRedirect("/users");
+
     }
 
-    private void doCreate(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-        String cardCode = req.getParameter("cardID");
+    private void doCreate(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+//        String cardId = req.getParameter("cardId");
+        String bookId = req.getParameter("id");
         String bookName = req.getParameter("bookName");
-        String studentName = req.getParameter("studentName");
 
-        String rentDate = req.getParameter("rentDate");
-        String returnDate = req.getParameter("returnDate");
-        Student student = new Student(cardCode, bookName, studentName ,rentDate, returnDate);
-//        studentService.add(student);
-        resp.sendRedirect("/users");
+        String studentName = req.getParameter("studentName");
+        Student student = libraryService.findStudentByName(studentName);
+
+//        LocalDate rentDate = LocalDate.parse(req.getParameter("rentDate"), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+//        LocalDate rentDate = LocalDate.parse(req.getParameter("rentDate"), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        LocalDate rentDate = LocalDate.now();
+        LocalDate returnDate = LocalDate.parse(req.getParameter("returnDate"), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+
+//        Student student1 = new Student(cardId, bookId, bookName, student.getStudentId() ,rentDate, returnDate);
+        Student student1 = new Student(bookId, bookName, student.getStudentId() ,rentDate, returnDate);
+        libraryService.addStudent(student1);
+        resp.sendRedirect("/books");
 
     }
 

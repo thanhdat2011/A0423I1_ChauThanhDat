@@ -26,7 +26,14 @@ having max(mark) >= all(select max(mark) from marks);
 /* Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần*/
 select students.student_ID, student_name, student_phone, student_address, avg(mark) as average from students
 join marks on students.student_ID = marks.student_ID
-group by students.student_ID
-order by average desc;
+group by students.student_ID;
+-- having average > 7;
+
+select avg(T.each_average) as total from 
+(	select avg(mark) as each_average
+	from students
+	join marks on students.student_ID = marks.student_ID
+	group by students.student_ID
+    ) T;
 
 

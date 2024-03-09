@@ -11,7 +11,7 @@ delimiter ;
 
 call getCusByid(175);
 
-/* Khi truyền tham số dạng OUT mục đích là lấy dữ liệu trong Proedure và sử dụng ở bên ngoài.
+/* Khi truyền tham số dạng OUT mục đích là lấy dữ liệu trong Procedure và sử dụng ở bên ngoài.
 Khi truyền tham số vào dạng OUT phải có chữ @ đằng trước biến
 Hoạt động giống tham chiếu nên biến truyền vào dạng OUT không cần định nghĩa trước, chính vì vậy khởi đầu nó có giá trị NULL*/
 

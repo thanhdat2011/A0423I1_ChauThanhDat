@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89f89dec-241f-4959-b011-d43fdd5fe3ed" name="Default Changelist" comment="" />
+    <list default="true" id="89f89dec-241f-4959-b011-d43fdd5fe3ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../module3/module3_CSS/_ss6_CSS/practice/css_using.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +36,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2Oy3Rturkou48wD5PzlMuQ70JnP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -140,6 +142,9 @@
       <workItem from="1688721027543" duration="2960000" />
       <workItem from="1688725506081" duration="68000" />
       <workItem from="1689326580513" duration="15000" />
+      <workItem from="1697630817618" duration="4000" />
+      <workItem from="1697630827102" duration="70000" />
+      <workItem from="1697631092814" duration="14000" />
     </task>
     <servers />
   </component>
@@ -159,46 +164,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="539" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1687781553046">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="548" y="159" key="FileChooserDialogImpl" timestamp="1697630887973">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="539" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1687781553046" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1687784345095">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1687784345095" />
-    <state x="435" y="59" key="SettingsEditor" timestamp="1683807095112">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="435" y="59" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1683807095112" />
-    <state x="613" y="110" key="VCS.ChangeListViewerDialog" timestamp="1687182680603">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="613" y="110" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1687182680603" />
-    <state x="376" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1684932894988">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="376" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1684932894988" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1688127033182">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1688127033182" />
-    <state x="93" y="93" width="1350" height="638" key="dock-window-1" timestamp="1684332091888">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1684332091888" />
-    <state x="93" y="93" width="1350" height="638" key="dock-window-2" timestamp="1684332091888">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1684332091888" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1688546304874">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1688546304874" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1686748156514">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1686748156514" />
+    <state x="548" y="159" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1697630887973" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

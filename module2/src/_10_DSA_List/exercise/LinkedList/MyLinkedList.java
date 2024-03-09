@@ -7,6 +7,7 @@ public class MyLinkedList<E> {
        head = new Node(data);
        numNodes++;
     }
+
     class Node {
         private Node next;
         private Object data;
@@ -112,16 +113,16 @@ public class MyLinkedList<E> {
         }
         return -1;
     }
-    public E get(int index) {
-        Node temp = head;
-        if (index < 0 || index > numNodes) {
-            throw new IndexOutOfBoundsException();
+        public E get(int index) {
+            Node temp = head;
+            if (index < 0 || index > numNodes) {
+                throw new IndexOutOfBoundsException();
+            }
+            for (int i=0; i<index;i++) {
+                temp = temp.next;
+            }
+            return (E) temp.data;
         }
-        for (int i=0; i<index;i++) {
-            temp = temp.next;
-        }
-        return (E) temp.data;
-    }
     public E getFirst() {
         if (head != null) {
             return (E) head.data;

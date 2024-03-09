@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <style>
+        h1,h2 {
+            text-align: center;
+        }
+        button a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student List</h1>
+
+<a th:href="@{/library}">Home</a>
+
+<a th:href="@{/student/show-form-create}">Add New Student</a>
+
+<form th:action="@{/student/search}" method="get">
+    <input type="text" placeholder="Title" th:name="keySearch">
+    <input type="submit" value="Search">
+</form>
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>CLass</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student, loop : ${studentList}">
+        <td th:text="${loop.count}"></td>
+        <td th:text="${student.studentName}"></td>
+        <td th:text="${student.dob}"></td>
+        <td th:text="${student.fptClass.className}"></td>
+        <td>
+            <th:block>
+                <button class="btn btn-danger"><a th:href="@{/student/{id}/show-form-edit(id=${student.studentId})}">Edit</a></button>
+<!--                <button class="btn btn-danger"><a th:href="@{/student/{id}/delete(id=${student.studentId})}">Delete</a></button>-->
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        th:data-bs-target="'#delete' + ${student.studentId}" >
+                    Delete
+                </button>
+
+                <form th:action="@{/student/{id}/delete(id=${student.studentId})}" th:method="post">
+
+                    <div class="modal" th:id="'delete' + ${student.studentId}" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span\>Do you want to delete student </span><span th:text="${student.studentName}"></span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </th:block>
+
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+
+<div class="text-center" th:unless="${studentList.isEmpty()}">
+    <a th:href="@{/student/list(page=${studentList.number - 1})}" th:if="${studentList.hasPrevious()}">Prev</a>
+    <span th:text="${studentList.number + 1}"></span> / <span th:text="${studentList.totalPages}"></span>
+    <a th:href="@{/student/list(page=${studentList.number + 1})}" th:if="${studentList.hasNext()}">Next</a>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</html>

@@ -68,16 +68,22 @@ public class BlogController {
         return new ModelAndView("content","blog",iBlogService.findBlogById(id));
     }
 
-    @PostMapping("/searchBlog")
-    public ModelAndView searchBlog(@RequestParam(defaultValue = "0", required = false) int page, @RequestParam String keySearch){
+//    @PostMapping("/searchBlog")
+//    public ModelAndView searchBlog(@RequestParam(defaultValue = "0", required = false) int page, @RequestParam String keySearch){
+//        Pageable pageable = PageRequest.of(page, 2);
+//        Page<Blog> blogPage = iBlogService.findBlogByTitle(pageable, keySearch);
+//        return new ModelAndView("search", "blogList", blogPage);
+//    }
+
+    @GetMapping("/searchBlog")
+    public ModelAndView showSearchBlog(@RequestParam(defaultValue = "0", required = false) int page, @RequestParam String keySearch){
         Pageable pageable = PageRequest.of(page, 2);
         Page<Blog> blogPage = iBlogService.findBlogByTitle(pageable, keySearch);
-        return new ModelAndView("search", "blogList", blogPage);
+        ModelAndView modelAndView = new ModelAndView("search");
+        modelAndView.addObject("blogList", blogPage);
+        modelAndView.addObject("keySearch", keySearch);
+        return modelAndView;
+//        return new ModelAndView("search", "blogList", blogPage);
     }
-
-//    @GetMapping("/searchBlog")
-//    public ModelAndView showSearchBlog(@RequestParam(defaultValue = "0", required = false) int page, @RequestParam String keySearch){
-//        searchBlog(page, keySearch);
-//    }
 
 }

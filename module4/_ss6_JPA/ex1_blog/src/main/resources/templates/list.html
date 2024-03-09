@@ -22,8 +22,8 @@
 
 <a class="btn btn-primary" th:href="@{/create-blog-form}">Create Blog</a>
 <br>
-<form th:action="@{/searchBlog}" method="post">
-    <input type="text" placeholder="Title" name="keySearch">
+<form th:action="@{/searchBlog}" method="get">
+    <input type="text" placeholder="Title" th:name="keySearch">
     <input type="submit" value="Search">
 </form>
 

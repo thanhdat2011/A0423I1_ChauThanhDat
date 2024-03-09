@@ -24,7 +24,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("")
-public class StudentController {
+public class    StudentController {
     @Autowired
     private IStudentService iStudentService;
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+</head>
+<body>
+<h1>Rent Book History</h1>
+<a th:href="@{/library}">Home</a>
+
+<a th:href="@{/library/show-form-rent}">Rent book</a>
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <td>No</td>
+        <td>Student ID</td>
+        <td>Student</td>
+        <td>Class</td>
+        <td>Book ID</td>
+        <td>Book Name</td>
+        <td>Rent date</td>
+        <td>Amount</td>
+        <td>Action</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="rent, loop : ${rentList}">
+        <td th:text="${loop.count}"></td>
+        <td th:text="${rent.student.studentId}"></td>
+        <td th:text="${rent.student.studentName}"></td>
+        <td th:text="${rent.student.fptClass.className}"></td>
+        <td th:text="${rent.book.bookId}"></td>
+        <td th:text="${rent.book.name}"></td>
+        <td th:text="${rent.rentDate}"></td>
+        <td th:text="${rent.amount}"></td>
+        <td>
+            <th:block>
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        th:data-bs-target="'#delete' + ${rent.id}" >
+                    Give Back
+                </button>
+
+                <form th:action="@{/library/{id}/delete(id=${rent.id})}" th:method="post">
+
+                    <div class="modal" th:id="'delete' + ${rent.id}" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Give back book</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span\>Do you want to give back book name : </span> <span th:text="${rent.book.name}"></span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Yes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </th:block>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</html>

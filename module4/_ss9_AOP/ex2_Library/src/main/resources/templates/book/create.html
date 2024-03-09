@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            border: 1px solid black;
+            padding: 2%;
+            margin: 50px auto auto auto;
+        }
+    </style>
+</head>
+<body>
+<h1>Create Book</h1>
+
+<form th:action="@{/book/rent}" th:method="post" th:object="${book}">
+    <div class="row mb-3">
+        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName" th:field="*{name}">
+        </div>
+    </div>
+
+
+    <div class="row mb-3">
+        <label for="inputAuthor" class="col-sm-2 col-form-label">Author</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputAuthor" th:field="*{author}">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="inputDate" class="col-sm-2 col-form-label">Publish Date</label>
+        <div class="col-sm-10">
+            <input type="date" class="form-control" id="inputDate" th:field="*{publishDate}">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="inputAmount" class="col-sm-2 col-form-label">Amount</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputAmount" th:field="*{amount}">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+<!--<form th:action="@{/book/add}" th:method="post" th:object="${book}">-->
+<!--    Name <input type="text" th:field="*{name}">-->
+<!--    Author <input type="text" th:field="*{author}">-->
+<!--    Publish Date <input type="date" th:field="*{publishDate}">-->
+<!--    Amount <input type="number" th:field="*{amount}">-->
+<!--    <input type="submit" value="Add">-->
+<!--</form>-->
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</html>

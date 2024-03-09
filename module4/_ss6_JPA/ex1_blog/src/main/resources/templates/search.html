@@ -42,9 +42,9 @@
 </table>
 
 <div class="text-center" th:unless="${blogList.isEmpty()}">
-    <a th:href="@{/searchBlog(page=${blogList.number - 1})}" th:if="${blogList.hasPrevious()}">Prev</a>
+    <a th:href="@{/searchBlog(keySearch= ${keySearch}, page=${blogList.number - 1})}" th:if="${blogList.hasPrevious()}">Prev</a>
     <span th:text="${blogList.number + 1}"></span> / <span th:text="${blogList.totalPages}"></span>
-    <a th:href="@{/searchBlog(page=${blogList.number + 1})}" th:if="${blogList.hasNext()}">Next</a>
+    <a th:href="@{/searchBlog(keySearch= ${keySearch}, page=${blogList.number + 1})}" th:if="${blogList.hasNext()}">Next</a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+</head>
+<body>
+<h1 class="text-center">Student list</h1>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Class name</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="body">
+
+    </tbody>
+</table>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" id="close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="idDel">
+                Are you sure to delete <span id="nameDel" class="text-danger"></span> ?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="remove">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script>
+    function display() {
+        $.ajax({
+            url: "http://localhost:8080",
+            type: "GET",
+            dataType: "JSON",
+            success: function (data) {
+
+                let div = [];
+                for (let i = 0; i < data.length; i++) {
+                    div.push("<tr>");
+                    // template string literal
+                    div.push(`<td>${i + 1}</td>`);
+                    div.push(`<td>${data[i].name}</td>`);
+                    div.push(`<td>${data[i].email}</td>`);
+                    div.push(`<td>${data[i].codeGymClass.name}</td>`);
+                    div.push(`<td><button type="button" class="btn btn-danger"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    onclick="send('${data[i].id}' , '${data[i].name}')">
+                                    Delete
+                                   </button>
+                              </td>`);
+                    div.push("</tr>");
+                }
+                $("#body").empty().append(div.join(""));
+            },
+            // Error handling
+            // error: function (data) {
+            //
+            // }
+        })
+
+    }
+
+    // function send(id,name) {
+    //    $("#idDel").val(id);
+    //    $("#nameDel").text(name);
+    // }
+
+    // function remove(id) {
+    //     $.ajax({
+    //         url: `http://localhost:8080/api/student/delete/${id}`,
+    //         type: "DELETE",
+    //         success: function (){
+    //             display();
+    //             $("#close").click();
+    //         }
+    //     })
+    // }
+
+    $(document).ready(
+        function () {
+            display();
+            // $("#remove").click(function () {
+            //     let id =  $("#idDel").val();
+            //     remove(id);
+            // })
+        }
+    )
+</script>
+</html>

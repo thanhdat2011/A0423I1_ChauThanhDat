@@ -10,5 +10,4 @@ import javax.servlet.annotation.*;
 @Controller
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
-    @GetMapping
 }

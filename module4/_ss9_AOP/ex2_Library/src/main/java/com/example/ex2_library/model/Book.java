@@ -17,9 +17,9 @@ public class Book {
 
     @OneToMany(mappedBy = "book")
     List<StudentRentBook> bookRentList;
+
     public Book() {
     }
-
 
 
     public Book(Long bookId, String name, String author, LocalDate publishDate, int amount) {

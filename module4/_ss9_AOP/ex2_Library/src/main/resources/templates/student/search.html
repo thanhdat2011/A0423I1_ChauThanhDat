@@ -16,6 +16,9 @@
     </style>
 </head>
 <body>
+
+<h1>Search</h1>
+
 <a th:href="@{/library}">Home</a>
 <table class="table table-hover">
     <thead>
@@ -34,8 +37,40 @@
         <td th:text="${student.dob}"></td>
         <td th:text="${student.fptClass.className}"></td>
         <td>
-            <th:block><button class="btn btn-danger"><a th:href="@{/student/{id}/show-edit-form(id=${student.studentId})}">Edit</a></button></th:block>
-            <th:block><button class="btn btn-danger"><a th:href="@{/student/{id}/delete(id=${student.studentId})}">Delete</a></button></th:block>
+<!--            <th:block><button class="btn btn-danger"><a th:href="@{/student/{id}/show-edit-form(id=${student.studentId})}">Edit</a></button></th:block>-->
+<!--            <th:block><button class="btn btn-danger"><a th:href="@{/student/{id}/delete(id=${student.studentId})}">Delete</a></button></th:block>-->
+            <th:block>
+                <button class="btn btn-danger"><a th:href="@{/student/{id}/show-form-edit(id=${student.studentId})}">Edit</a></button>
+                <!--                <button class="btn btn-danger"><a th:href="@{/student/{id}/delete(id=${student.studentId})}">Delete</a></button>-->
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        th:data-bs-target="'#delete' + ${student.studentId}" >
+                    Delete
+                </button>
+
+                <form th:action="@{/student/{id}/delete(id=${student.studentId})}" th:method="post">
+
+                    <div class="modal" th:id="'delete' + ${student.studentId}" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span\>Do you want to delete student </span><span th:text="${student.studentName}"></span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </th:block>
         </td>
     </tr>
     </tbody>

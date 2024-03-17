@@ -36,6 +36,7 @@ public class StudentController {
         return ifptClassService.findAll();
     }
 
+
     /* ============================== CREATE =================================== */
     @GetMapping("/list")
     public ModelAndView showStudentList(@RequestParam(defaultValue = "0", required = false) int page){

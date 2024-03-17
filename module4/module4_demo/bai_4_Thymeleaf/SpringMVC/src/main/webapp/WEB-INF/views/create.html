@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/student/add}" method="post" th:object="${student}">
+    Name: <input type="text" th:field="*{name}">
+    Gender:
+    <input type="radio" th:field="*{gender}" value="1"> Male
+    <input type="radio" th:field="*{gender}" value="0"> Female
+    Languages:
+    <input type="checkbox" th:field="*{languages}" value="Java"> Java
+    <input type="checkbox" th:field="*{languages}" value="JS"> JS
+    <input type="checkbox" th:field="*{languages}" value="C#"> C#
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

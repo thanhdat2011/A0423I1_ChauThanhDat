@@ -7,28 +7,43 @@ import {toast} from "react-toastify";
 
 function EditBook() {
     const [book, setBook] = useState()
+    const [categories, setCategories] = useState([])
     const {id} = useParams()
 
     useEffect(() => {
+        getAllCategory()
         getEditBook()
     }, [])
 
 
     const navigate = useNavigate()
+
+    //========================= VALIDATE ==========================
+    // REGEX : .matches(/^[a-zA-Z0-9]+$/, 'Invalid format')
     const validateBook = {
         id : Yup.number().required("Must be not empty !!!").min(1).max(100000),
         title : Yup.string().required("Must be not empty !!!").min(5).max(10000),
-        author : Yup.string().required("Must be not empty !!!").min(5).max(10000),
-        quantity : Yup.number().required("Must be not empty !!!").min(1).max(1000)
+        author : Yup.string().required("Must be not empty !!!").matches(/^[a-zA-Z ]+$/, "do not have digit").min(5).max(10000),
+        date: Yup.date().max(new Date(), "Date in future !!!"),
+        // category : Yup.string().required("Please choose !!!"),
+        category : Yup.string().required("Please choose !!!").typeError("Please choose !!!"),
+        quantity : Yup.number().required("Must be not empty !!!").min(1).max(1000).typeError("Must be a number")
     }
 
+    //==================== GET BOOK WANT EDIT ====================
     const getEditBook = async () => {
         const temp = await bookService.getBookById(id)
         setBook(temp)
     }
 
-    const updateBook = async (book) => {
-        const isSuccess = await bookService.editBook(book)
+    //==================== UPDATE BOOK ===========================
+    const updateBook = async (updateBook) => {
+        // để ý book.category ở đây là id => mình muốn gắn lại cho book.category là đối tượng với id đó
+        // gán lại đối tượng category
+        const id = updateBook.category
+        updateBook.category = await getCategoryById(id)
+
+        const isSuccess = await bookService.editBook(updateBook)
         if (isSuccess) {
             toast.success("Edit success !!!")
         } else {
@@ -36,6 +51,17 @@ function EditBook() {
         }
         navigate("/books")
     }
+
+    //=================== HANDLE SELECT CATEGORY ==================
+    const getAllCategory = async () => {
+        const res = await bookService.getAllCategory()
+        setCategories(res)
+    }
+
+    const getCategoryById = async (id) => {
+        return await bookService.getCategoryById(id);
+    }
+    // ============================================================
 
     if (!book) {
         return null
@@ -47,7 +73,7 @@ function EditBook() {
                     validationSchema={Yup.object(validateBook)}
             >
                 <Form>
-                    <h3 style={{textAlign : "center"}}>Add New Book</h3>
+                    <h3 style={{textAlign : "center"}}>Edit Book</h3>
                     <div className="form-group row">
                         <label htmlFor="inputID" className="col-sm-2 col-form-label">ID</label>
                         <div className="col-sm-10">
@@ -73,9 +99,35 @@ function EditBook() {
                     </div>
 
                     <div className="form-group row">
+                        <label htmlFor="inputDate" className="col-sm-2 col-form-label">Publish Date</label>
+                        <div className="col-sm-10">
+                            <Field type="date" className="form-control" id="inputDate" name="date"/>
+                            <ErrorMessage name="date" component="div"/>
+                        </div>
+                    </div>
+
+                    <div className="form-group row">
+                        <label htmlFor="inputCategory" className="col-sm-2 col-form-label">Category</label>
+                        <div className="col-sm-10">
+                            <Field as="select" className="form-control" id="inputCategory" placeholder="category" name="category">
+                                <option value={book.category.id} hidden>{book.category.type}</option>
+                                {categories.map(category => (
+                                    <option key={category.id}
+                                            value={category.id}
+                                            // defaultValue={book.category.id}
+                                    >
+                                        {category.type}
+                                    </option>
+                                ))}
+                            </Field>
+                            <ErrorMessage name="category" component="div"/>
+                        </div>
+                    </div>
+
+                    <div className="form-group row">
                         <label htmlFor="inputQuantity" className="col-sm-2 col-form-label">Quantity</label>
                         <div className="col-sm-10">
-                            <Field type="number" className="form-control" id="inputQuantity" placeholder="quantity" name="quantity"/>
+                            <Field className="form-control" id="inputQuantity" placeholder="quantity" name="quantity"/>
                             <ErrorMessage name="quantity" component="div"/>
                         </div>
                     </div>
@@ -86,4 +138,5 @@ function EditBook() {
         </>
     )
 }
+
 export default EditBook

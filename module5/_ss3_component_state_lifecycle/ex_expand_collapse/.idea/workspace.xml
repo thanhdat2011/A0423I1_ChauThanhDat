@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f028d54a-916a-41c4-abca-d9d5b8821867" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../module3/_ss6_CSS/.idea/_ss6_CSS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/.idea/jsonSchemas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/components/ListRentBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss6_CSS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss6_CSS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_API_Clients/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/components/AddBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/components/AddBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/components/EditBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/components/EditBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/components/ListBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/components/ListBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/service/BookService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_API_Clients/library/src/service/BookService.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2fJoju8A8pPa1xUNrJ4SP4cdGjG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f028d54a-916a-41c4-abca-d9d5b8821867" name="Default Changelist" comment="" />
+      <created>1713528679896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713528679896</updated>
+      <workItem from="1713528681352" duration="28000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

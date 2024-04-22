@@ -16,5 +16,13 @@ Form {
   width: 50%;
   border: 1px solid black;
   padding: 2%;
-  margin: 50px auto auto auto;
+  margin: 100px auto auto auto;
 }
+
+.action-btn {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 60%;
+}
+

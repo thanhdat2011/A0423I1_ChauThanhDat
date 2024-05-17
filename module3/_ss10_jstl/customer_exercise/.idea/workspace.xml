@@ -5,15 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acdabd8b-2221-4261-92e3-d4935032138c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/webapp/customers/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss5_ORM/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss5_ORM/.idea/_ss5_ORM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss5_ORM/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss5_ORM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss5_ORM/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss5_ORM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss6_JPA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss6_JPA/.idea/_ss6_JPA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss6_JPA/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss6_JPA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss6_JPA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/_ss6_JPA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module5/demo/_ss8/.idea/_ss8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module5/demo/json_obj_in_obj/.idea/json_obj_in_obj.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module5/demooo/customerList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module5/final/.idea/_ss6_API_Clients.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FE_module3" beforeDir="false" afterPath="$PROJECT_DIR$/../../FE_module3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/java/com/example/customer_management/controllers/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/java/com/example/customer_management/controllers/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/webapp/customers/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/src/main/webapp/customers/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss12_JDBC/product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss12_JDBC/product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_CSS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_CSS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss9_web/simple_login/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_web/simple_login/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/java/com/example/security/common/EncryptPasswordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/java/com/example/security/common/EncryptPasswordUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/java/com/example/security/config/MyWebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/java/com/example/security/config/MyWebMvcConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss5_ORM/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss5_ORM/ex_product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/components/EditBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/components/EditBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/data/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +92,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/PC/Desktop/module3_demo/_ss11_MVC/jwbd-customer-management-develop",
+    "last_opened_file_path": "D:/CodeGym/module3/_ss10_jstl/customer_exercise",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -191,6 +211,7 @@
       <workItem from="1698998311003" duration="365000" />
       <workItem from="1699002139077" duration="16000" />
       <workItem from="1699273820407" duration="669000" />
+      <workItem from="1715440538253" duration="554000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,58 @@
+{
+  "clothes": [
+    {
+      "id": "1",
+      "title": "Ao thun LW",
+      "date": "2000-01-13",
+      "category": {
+        "id": "1",
+        "type": "shirt"
+      },
+      "quantity": "2"
+    },
+    {
+      "id": "2",
+      "title": "Quan hawai",
+      "date": "2020-01-20",
+      "category": {
+        "id": "3",
+        "type": "short"
+      },
+      "quantity": "3"
+    },
+    {
+      "id": "3",
+      "title": "Blaze RoutineBlaze RoutineBlaze RoutineBlaze RoutineBlaze RoutineBlaze Routine",
+      "date": "2024-05-03",
+      "category": {
+        "id": "1",
+        "type": "shirt"
+      },
+      "quantity": "15"
+    },
+    {
+      "id": "4",
+      "title": "Ao Channel",
+      "date": "2021-04-20",
+      "category": {
+        "id": "1",
+        "type": "shirt"
+      },
+      "quantity": "6"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "type": "shirt"
+    },
+    {
+      "id": "2",
+      "type": "blaze"
+    },
+    {
+      "id": "3",
+      "type": "short"
+    }
+  ]
+}

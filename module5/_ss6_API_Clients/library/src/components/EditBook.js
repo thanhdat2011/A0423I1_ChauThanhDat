@@ -33,6 +33,7 @@ function EditBook() {
     //==================== GET BOOK WANT EDIT ====================
     const getEditBook = async () => {
         const temp = await bookService.getBookById(id)
+        temp.category = temp.category.id
         setBook(temp)
     }
 
@@ -110,7 +111,7 @@ function EditBook() {
                         <label htmlFor="inputCategory" className="col-sm-2 col-form-label">Category</label>
                         <div className="col-sm-10">
                             <Field as="select" className="form-control" id="inputCategory" placeholder="category" name="category">
-                                <option value={book.category.id} hidden>{book.category.type}</option>
+                                {/*<option value={book.category.id} hidden>{book.category.type}</option>*/}
                                 {categories.map(category => (
                                     <option key={category.id}
                                             value={category.id}

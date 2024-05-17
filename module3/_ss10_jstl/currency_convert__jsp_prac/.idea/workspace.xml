@@ -5,20 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c0370a0-2925-4f5c-97d7-c717ac1ecf10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/converter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FE_module3" beforeDir="false" afterPath="$PROJECT_DIR$/../../FE_module3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer_exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../customer_exercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss11_MVC/Customer_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss12_JDBC/product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss12_JDBC/product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_CSS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_CSS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss9_web/Product_Discount_Calculator/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_web/Product_Discount_Calculator/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss9_web/Product_Discount_Calculator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_web/Product_Discount_Calculator/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss9_web/Product_Discount_Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_web/Product_Discount_Calculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss9_web/simple_login/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_web/simple_login/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss9_web/simple_login/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_web/simple_login/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss9_web/simple_login/src/main/java/com/example/simple_login/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_web/simple_login/src/main/java/com/example/simple_login/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/java/com/example/security/common/EncryptPasswordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/java/com/example/security/common/EncryptPasswordUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/java/com/example/security/config/MyWebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/java/com/example/security/config/MyWebMvcConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss13_security/demo/security/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/_ss5_ORM/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/_ss5_ORM/ex_product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/components/EditBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/components/EditBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/demooo/customerList.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/demooo/customerList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +68,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -76,7 +88,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ToolWindowBuild.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/CodeGym/module3/_ss10_jstl/dictionary_prac",
+    "last_opened_file_path": "D:/CodeGym/module3/_ss10_jstl/currency_convert__jsp_prac",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -193,6 +205,7 @@
       <workItem from="1698989504987" duration="581000" />
       <workItem from="1698990897835" duration="67000" />
       <workItem from="1698991022396" duration="70000" />
+      <workItem from="1715737982036" duration="1101000" />
     </task>
     <servers />
   </component>

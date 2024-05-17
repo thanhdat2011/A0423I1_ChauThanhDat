@@ -5,68 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ae6c943-b5b3-484e-b6f5-5fc35b6504bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/model/DTO/BookDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/model/DTO/LibraryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/model/DTO/StudentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/model/DTO/StudentRentBookDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/model/FPTClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/model/StudentRentBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/repository/IBookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/repository/IFPTClassRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/repository/IStudentRentBookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/repository/IStudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/service/Implement/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/service/Implement/FPTClassServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/service/Implement/StudentRentBookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/service/Implement/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/service/Interface/IBookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/service/Interface/IFPTClassService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/service/Interface/IStudentRentBookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/java/com/example/ex2_library/service/Interface/IStudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/resources/templates/book/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/resources/templates/book/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/resources/templates/rentBook/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/resources/templates/rentBook/rent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/resources/templates/student/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss9_AOP/ex2_Library/src/main/resources/templates/student/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/out/production/module2/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module2/src/_Final_Exam/Repository/ExProductRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_Final_Exam/Repository/ExProductRepoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module2/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/controllers/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/controllers/BookServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/ILibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/ILibraryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/BaseRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/BaseRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/LibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/LibraryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/ILibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/ILibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/Impl/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/Impl/LibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/bookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/bookList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/studentList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss6_JPA/ex1_blog/src/main/java/com/example/ex1_blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_JPA/ex1_blog/src/main/java/com/example/ex1_blog/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss6_JPA/ex1_blog/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_JPA/ex1_blog/src/main/resources/templates/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss6_JPA/ex1_blog/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_JPA/ex1_blog/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss9_AOP/demo/SpringBoot/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_AOP/demo/SpringBoot/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss9_AOP/demo/SpringBoot/src/main/java/com/example/springboot/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_AOP/demo/SpringBoot/src/main/java/com/example/springboot/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss9_AOP/demo/SpringBoot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss9_AOP/demo/SpringBoot/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo_spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo_spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss6_CSS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss6_CSS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/components/EditBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/components/EditBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/data/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +66,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/CodeGym/module4/_ss4_thymeleaf/ex_product_management",
+    "last_opened_file_path": "D:/CodeGym/module3/_ss11_MVC/Customer_management",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -243,6 +184,7 @@
       <workItem from="1704512650305" duration="1793000" />
       <workItem from="1704705930893" duration="1660000" />
       <workItem from="1709891841533" duration="819000" />
+      <workItem from="1714982871376" duration="77000" />
     </task>
     <servers />
   </component>

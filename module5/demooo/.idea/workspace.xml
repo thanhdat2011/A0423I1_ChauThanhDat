@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ee75fbe-498c-4f6b-9b23-c19e630026af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss5_ORM/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss5_ORM/.idea/_ss5_ORM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss5_ORM/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss5_ORM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss5_ORM/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss5_ORM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss6_JPA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss6_JPA/.idea/_ss6_JPA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss6_JPA/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss6_JPA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss6_JPA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/_ss6_JPA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/_ss8/.idea/_ss8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/json_obj_in_obj/.idea/json_obj_in_obj.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customerList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final/.idea/_ss6_API_Clients.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/FE_module3" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/FE_module3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/_ss11_MVC/Customer_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/_ss11_MVC/Customer_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/_ss12_JDBC/product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/_ss12_JDBC/product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/_ss6_CSS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/_ss6_CSS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/_ss9_web/simple_login/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/_ss9_web/simple_login/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/_ss13_security/demo/security/src/main/java/com/example/security/common/EncryptPasswordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/_ss13_security/demo/security/src/main/java/com/example/security/common/EncryptPasswordUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/_ss13_security/demo/security/src/main/java/com/example/security/config/MyWebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/_ss13_security/demo/security/src/main/java/com/example/security/config/MyWebMvcConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/_ss13_security/demo/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/_ss13_security/demo/security/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/_ss5_ORM/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/_ss5_ORM/ex_product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_ss6_API_Clients/library/src/components/EditBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../_ss6_API_Clients/library/src/components/EditBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_ss6_API_Clients/library/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../_ss6_API_Clients/library/src/data/db.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2gH4n1VxwpI70hA7PfechZYqRxP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../projectweb" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ee75fbe-498c-4f6b-9b23-c19e630026af" name="Default Changelist" comment="" />
+      <created>1715341332170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715341332170</updated>
+      <workItem from="1715341333300" duration="23000" />
+      <workItem from="1715342494238" duration="40000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1715342533143">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1715342533143" />
+  </component>
+</project>

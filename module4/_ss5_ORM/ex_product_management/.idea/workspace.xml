@@ -5,37 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ae6c943-b5b3-484e-b6f5-5fc35b6504bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/demo/SpringBoot/src/main/resources/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/demo/SpringBoot/src/main/resources/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/ex1_blog/src/main/resources/templates/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/out/production/module2/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_10_DSA_List/exercise/LinkedList/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module2/src/_Final_Exam/Repository/ExProductRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/_Final_Exam/Repository/ExProductRepoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module2/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss10_jstl/dictionary_prac/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/controllers/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/controllers/BookServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/models/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/ILibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/ILibraryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/BaseRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/BaseRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/LibraryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/repositories/Impl/LibraryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/ILibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/ILibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/Impl/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/java/com/example/user_manager/services/Impl/LibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/bookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/bookList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager/src/main/webapp/books/studentList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/user_manager_DB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss4_functionSQL/ex1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss5_index_view_storeProcedure/prac2_SP_in_out_inout.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss3_FormBinding/ex1_mail_config/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss3_FormBinding/ex1_mail_config/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_ss3_FormBinding/ex1_mail_config/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss3_FormBinding/ex1_mail_config/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/_ss5_ORM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/.idea/_ss6_JPA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss6_JPA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module5/demo/_ss8/.idea/_ss8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module5/demo/json_obj_in_obj/.idea/json_obj_in_obj.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module5/final/.idea/_ss6_API_Clients.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/FE_module3" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/FE_module3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss12_JDBC/product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/_ss6_CSS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/_ss6_CSS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss4_thymeleaf/ex_product_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/components/EditBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/components/EditBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/_ss6_API_Clients/library/src/data/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,24 +81,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/module4/_ss5_ORM/ex_product_management&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;dcb098241f18b9ca36bc484c70744485&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/SE4/PRJ301",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "dcb098241f18b9ca36bc484c70744485",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CodeGym\module4\_ss5_ORM\ex_product_management\src\main\java\com\example\ex_product_management\config" />
@@ -221,6 +211,7 @@
       <workItem from="1705052908820" duration="2128000" />
       <workItem from="1705319898439" duration="1883000" />
       <workItem from="1705328159443" duration="26000" />
+      <workItem from="1714984185982" duration="688000" />
     </task>
     <servers />
   </component>
